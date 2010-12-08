@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>files</key>
+	<dict>
+		<key>Button Add_256.png</key>
+		<data>
+		TqyFdNXq7xQSFHZvCIYo0BSX5WE=
+		</data>
+		<key>Button Add_32.png</key>
+		<data>
+		0FplHPlqt2soL+TR09UFg5uBNVU=
+		</data>
+		<key>Button Close_128.png</key>
+		<data>
+		on6ainh3zjDtcfXeT28tfHFEs7g=
+		</data>
+		<key>Button Close_256.png</key>
+		<data>
+		HODuuSISkt1AgdsjbbWigVwis6w=
+		</data>
+		<key>Button First_128.png</key>
+		<data>
+		B2MO6tpHsyONy1kRdXlvEGCY7ZE=
+		</data>
+		<key>Button First_256.png</key>
+		<data>
+		ZaW48KzQymco8N2j/BAZlsrGIKI=
+		</data>
+		<key>Button First_32.png</key>
+		<data>
+		/5uAxYB1dA0hpoBJbku4patlpZ0=
+		</data>
+		<key>Button Help_128.png</key>
+		<data>
+		au9OXMKHeJyA1xAEW1LdTrIk3SU=
+		</data>
+		<key>Button Help_256.png</key>
+		<data>
+		sp57ubsuP1G4ICsvmBSM9d+UwUo=
+		</data>
+		<key>Button Help_32.png</key>
+		<data>
+		7/yV9yAATcrwuOigawHoKCPmrmU=
+		</data>
+		<key>Button Info_128.png</key>
+		<data>
+		VIDCf2qADEFN+OzjM2uy95pSAIs=
+		</data>
+		<key>Button Info_256.png</key>
+		<data>
+		wZbpzsvnU0uQMRR58mNuWjSoaVg=
+		</data>
+		<key>Button Info_32.png</key>
+		<data>
+		ed19SJApT9G8jmeFDVaGfcDiZ0g=
+		</data>
+		<key>Button Last_128.png</key>
+		<data>
+		OAaLVj1OvbNSX2bw/EnlCLcVWY0=
+		</data>
+		<key>Button Last_256.png</key>
+		<data>
+		KikyJM8t+sfU8DJ/jJ9W7dp0AxY=
+		</data>
+		<key>Button Last_32.png</key>
+		<data>
+		b6sCNCBZgrQ27kN6f6KmZNam3YI=
+		</data>
+		<key>Button Play_128.png</key>
+		<data>
+		yzhaFRXMbdl5KwqCacY1T5wPS6E=
+		</data>
+		<key>Button Play_256.png</key>
+		<data>
+		A8403PTC9K3froK40ytaDv0gIa4=
+		</data>
+		<key>Button Play_32.png</key>
+		<data>
+		urKriJRGI/m6eoY6G/GlAyyAyAo=
+		</data>
+		<key>Button Refresh_128.png</key>
+		<data>
+		qcwvTuNMLR9fu4dwpGR5LKkfoqU=
+		</data>
+		<key>Button Refresh_256.png</key>
+		<data>
+		mR80jvFXPNPp77cVdfqrlxeOI+k=
+		</data>
+		<key>Button Stop_128.png</key>
+		<data>
+		6+JDTu+YVpm9X/5PaLTFIk5NW+s=
+		</data>
+		<key>Button Stop_256.png</key>
+		<data>
+		2uZPrN8s2L9mVunyQ8zLKGldaTA=
+		</data>
+		<key>Button Stop_32.png</key>
+		<data>
+		uv2F27cLhKrPA1gAceS8IQLIxK4=
+		</data>
+		<key>Coils-XYZ-MB2.dat</key>
+		<data>
+		o5FXK+tcP5U2vBzwKUu26Fru3ZY=
+		</data>
+		<key>Default.png</key>
+		<data>
+		YSmx/sS+1jv1DH494W+n/Jfsc40=
+		</data>
+		<key>Hex-pole-MB.dat</key>
+		<data>
+		aN+VZ0oosPVcPsJtSutN+0NrxWo=
+		</data>
+		<key>Icon.png</key>
+		<data>
+		YJYQbRTtWqobknE8KlG1t2klN1w=
+		</data>
+		<key>Main.xml</key>
+		<data>
+		fvfRqYe5XLmCCMZIS9n/RehDmVo=
+		</data>
+		<key>MainWindow.nib</key>
+		<data>
+		ES2gA7LN5Bh79yEDndXy/OOxuh8=
+		</data>
+		<key>PkgInfo</key>
+		<data>
+		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>Shader.fsh</key>
+		<data>
+		r78zHZP+EqQ8XJP6dWkAdjq11FU=
+		</data>
+		<key>Shader.vsh</key>
+		<data>
+		CSARTmtVF5cTaySzHzQjufsXMoE=
+		</data>
+		<key>Trap.xcent</key>
+		<data>
+		qGZhbSHnkFnRwd32q9blpzkNkwk=
+		</data>
+	</dict>
+	<key>rules</key>
+	<dict>
+		<key>.*</key>
+		<true/>
+		<key>Info.plist</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>10</real>
+		</dict>
+		<key>ResourceRules.plist</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>100</real>
+		</dict>
+	</dict>
+</dict>
+</plist>

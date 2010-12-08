@@ -1,0 +1,31 @@
+﻿<Experiment>
+  
+	<kt> 50000 </kt>
+	<kd> 10</kd>
+	<E> 1 </E>
+	<B00> 0 </B00>
+
+  <comment> 
+    Лучше всего использовать kd = 500, 1000, 2000
+    Иначе могут возникать ошибки, я пока что не разобрался в чем дело.
+  </comment>
+  
+  <CoilsField>Coils-XYZ-MB2.dat</CoilsField>
+  <HexField>Hex-pole-MB.dat</HexField>
+
+  <ParticlesNumber>10000</ParticlesNumber>
+  <temp> 32768 65536 131072 524288 </temp>
+  
+  
+  <InitialDistribution>
+    <xRadius> 1.51 </xRadius>
+    <yRadius> 1.51 </yRadius>
+    <zRadius> 16.1 </zRadius>
+    <x0>	    0.01 </x0>
+    <y0>	    0.01 </y0>
+    <z0>	    0.01 </z0>
+    <W0>	    100.1 </W0>
+    <fi>	    0.05 </fi>
+  </InitialDistribution>
+  
+</Experiment>

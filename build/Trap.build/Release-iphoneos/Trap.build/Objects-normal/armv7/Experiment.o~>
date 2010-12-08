@@ -1,0 +1,11 @@
+In file included from /Users/maxtkach/Desktop/Trap/Classes/Trap/Experiment.cpp:1:
+/Users/maxtkach/Desktop/Trap/Classes/Trap/Experiment.h:49: error: declaration of 'bool Experiment::isRunning()'
+/Users/maxtkach/Desktop/Trap/Classes/Trap/Experiment.h:28: error: conflicts with previous declaration 'bool Experiment::isRunning'
+/Users/maxtkach/Desktop/Trap/Classes/Trap/Experiment.h: In member function 'bool Experiment::isRunning()':
+/Users/maxtkach/Desktop/Trap/Classes/Trap/Experiment.h:49: error: argument of type 'bool (Experiment::)()' does not match 'bool'
+/Users/maxtkach/Desktop/Trap/Classes/Trap/Experiment.cpp: In constructor 'Experiment::Experiment(std::string, const char*)':
+/Users/maxtkach/Desktop/Trap/Classes/Trap/Experiment.cpp:21: error: invalid use of member (did you forget the '&' ?)
+/Users/maxtkach/Desktop/Trap/Classes/Trap/Experiment.cpp: In member function 'void Experiment::start()':
+/Users/maxtkach/Desktop/Trap/Classes/Trap/Experiment.cpp:45: error: invalid use of member (did you forget the '&' ?)
+/Users/maxtkach/Desktop/Trap/Classes/Trap/Experiment.cpp: In member function 'virtual void Experiment::processExperiment()':
+/Users/maxtkach/Desktop/Trap/Classes/Trap/Experiment.cpp:127: error: invalid use of member (did you forget the '&' ?)
