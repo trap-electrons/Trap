@@ -12,7 +12,7 @@
 
 @implementation EAGLView
 
-@synthesize animating, renderer, experiment;
+@synthesize animating, trapEditor;
 @dynamic animationFrameInterval;
 
 // You must implement this method
@@ -53,12 +53,12 @@
 
 - (void)drawView:(id)sender
 {
-    [renderer render];
+    [trapEditor render];
 }
 
 - (void)layoutSubviews
 {
-    [renderer resizeFromLayer:(CAEAGLLayer*)self.layer];
+    [trapEditor resizeFromLayer:(CAEAGLLayer*)self.layer];
     [self drawView:nil];
 }
 
@@ -129,18 +129,23 @@
 
 - (void)dealloc
 {
-    [renderer release];
+    [trapEditor release];
 
     [super dealloc];
 }
 
 - (void)makeRenderer {
-	renderer = [[TrapEditor3D alloc] init];
-	[renderer setExperiment:experiment];
+	trapEditor = [[TrapEditor3D alloc] init];
+	[trapEditor setExperiment:experiment];
 }
 
 - (void)freeRenderer {
-	[renderer release];
+	[trapEditor release];
+}
+
+- (void)setExperiment:(Experiment *)e {
+	experiment = e;
+	[trapEditor setExperiment:e];
 }
 
 #pragma mark -
@@ -187,17 +192,15 @@ static CGFloat moduleBetweenPoints(CGPoint first, CGPoint second) {
 			prevScale = currentScale;
 			
 			scaleDiff = scaleDiff <= 1 ? scaleDiff-1.0 : 1.0-1.0/scaleDiff;
-			renderer.scale += scaleDiff;
+			trapEditor.scale += scaleDiff;
 			prevScaleDiff = scaleDiff;
 			
-			if (renderer.scale < 0.5) {
-				renderer.scale = 0.5;
+			if (trapEditor.scale < 0.5) {
+				trapEditor.scale = 0.5;
 			} 
-			if (renderer.scale > 3.0) {
-				renderer.scale = 3.0;
+			if (trapEditor.scale > 3.0) {
+				trapEditor.scale = 3.0;
 			}
-			
-			printf("\n cur:%f = %f", currentScale, scaleDiff);
         }
     }
 }

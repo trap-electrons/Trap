@@ -14,7 +14,7 @@
 @interface EAGLView : UIView
 {    
 @private
-    TrapEditor *renderer;
+    TrapEditor *trapEditor;
 	Experiment *experiment;
 	
     BOOL animating;
@@ -30,8 +30,7 @@
 	float initAngle, prevScale, prevScaleDiff;
 }
 
-@property Experiment *experiment;
-@property (nonatomic, readonly) TrapEditor *renderer;
+@property (nonatomic, readonly) TrapEditor *trapEditor;
 @property (readonly, nonatomic, getter=isAnimating) BOOL animating;
 @property (nonatomic) NSInteger animationFrameInterval;
 
@@ -42,5 +41,5 @@
 - (void)freeRenderer;
 
 - (void)resetViewTransform;
-
+- (void)setExperiment:(Experiment *)e;
 @end

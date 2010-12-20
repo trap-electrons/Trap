@@ -1,9 +1,10 @@
-6c97bcab8d523c563ad9acf7bc37be57 65c910c821e800d1c84b8f86090fc564 ffffffffffffffffffffffffffffffff 158900 /Users/maxtkach/Desktop/Trap/build/Trap.build/Debug-iphoneos/Trap.build/Objects-normal/armv7/EAGLView.o
-6c97bcabc694e5b53ad9acf7bc37b986 1ca667b1d5458ce3f63821467b3b4ccf ffffffffffffffffffffffffffffffff 123652 /Users/maxtkach/Desktop/Trap/build/Trap.build/Debug-iphoneos/Trap.build/Objects-normal/armv7/TrapEditor.o
-6c97bcabc1529db33ad9acf7bc379be3 3218f90b40111a78340a9dc5fae68376 ffffffffffffffffffffffffffffffff 284116 /Users/maxtkach/Desktop/Trap/build/Trap.build/Debug-iphoneos/Trap.build/Objects-normal/armv7/TrapEditor3D.o
+6c97bcab8b52e0023ad9acf7bc37a183 26da4b32f9fd08a5b07537fe2debfc40 ffffffffffffffffffffffffffffffff 164980 /Users/maxtkach/Desktop/Trap/build/Trap.build/Debug-iphoneos/Trap.build/Objects-normal/armv7/ConfigView.o
+6c97bcab8c9f734a3ad9acf7bc37be05 65c910c821e800d1c84b8f86090fc564 ffffffffffffffffffffffffffffffff 157856 /Users/maxtkach/Desktop/Trap/build/Trap.build/Debug-iphoneos/Trap.build/Objects-normal/armv7/EAGLView.o
+6c97bcabc75281593ad9acf7bc37b901 1ca667b1d5458ce3f63821467b3b4ccf ffffffffffffffffffffffffffffffff 123648 /Users/maxtkach/Desktop/Trap/build/Trap.build/Debug-iphoneos/Trap.build/Objects-normal/armv7/TrapEditor.o
+6c97bcabc09fdb833ad9acf7bc379b42 3218f90b40111a78340a9dc5fae68376 ffffffffffffffffffffffffffffffff 284172 /Users/maxtkach/Desktop/Trap/build/Trap.build/Debug-iphoneos/Trap.build/Objects-normal/armv7/TrapEditor3D.o
 1ca0839165656299417b8ad656e9143b 2b2f26464fb03882003e2d75fc8ec345 ffffffffffffffffffffffffffffffff 151156 /Users/maxtkach/Desktop/Trap/build/Trap.build/Debug-iphoneos/Trap.build/Objects-normal/armv7/Particles.o
 1ca083912e93e784417b8ad656e91c89 12740ab646650b9787d92103c2fa68ef ffffffffffffffffffffffffffffffff 302148 /Users/maxtkach/Desktop/Trap/build/Trap.build/Debug-iphoneos/Trap.build/Objects-normal/armv7/MagneticField.o
-1ca0839162c973b2417b8ad656e9c161 c6b208e25b6fcdcbda7669fa5753d4c3 ffffffffffffffffffffffffffffffff 210324 /Users/maxtkach/Desktop/Trap/build/Trap.build/Debug-iphoneos/Trap.build/Objects-normal/armv7/Experiment.o
+1ca0839162c97218417b8ad656e9c2b1 c6b208e25b6fcdcbda7669fa5753d4c3 ffffffffffffffffffffffffffffffff 210432 /Users/maxtkach/Desktop/Trap/build/Trap.build/Debug-iphoneos/Trap.build/Objects-normal/armv7/Experiment.o
 1ca08391659b613e417b8ad656e91729 4d87158421b118ad548eacbd52994bd5 ffffffffffffffffffffffffffffffff 109436 /Users/maxtkach/Desktop/Trap/build/Trap.build/Debug-iphoneos/Trap.build/Objects-normal/armv7/ElectricField.o
 1ca08391625fe3b2417b8ad656e9ccb8 9d39ea12d19fd72379bf7495701d2c60 ffffffffffffffffffffffffffffffff 77616 /Users/maxtkach/Desktop/Trap/build/Trap.build/Debug-iphoneos/Trap.build/Objects-normal/armv7/Console.o
 1ca08391623fee6d417b8ad656e914d8 a6f420cb74255bb0a616cd9ea06a3940 ffffffffffffffffffffffffffffffff 82572 /Users/maxtkach/Desktop/Trap/build/Trap.build/Debug-iphoneos/Trap.build/Objects-normal/armv7/Config.o
@@ -12,10 +13,10 @@
 1ca08391657c66c2417b8ad656e9e749 153c59ae5295d3b9ac3ec3d75931f33d ffffffffffffffffffffffffffffffff 143544 /Users/maxtkach/Desktop/Trap/build/Trap.build/Debug-iphoneos/Trap.build/Objects-normal/armv7/tinyxml.o
 1ca083912ecbdbf8417b8ad656e9ee77 e7570c8acda971913569a7214dc9bbbd ffffffffffffffffffffffffffffffff 15500 /Users/maxtkach/Desktop/Trap/build/Trap.build/Debug-iphoneos/Trap.build/Objects-normal/armv7/tinystr.o
 1ca083916231e771417b8ad656e99e3a d8b26576e7f9b648da1d3fad7c53e65f ffffffffffffffffffffffffffffffff 82980 /Users/maxtkach/Desktop/Trap/build/Trap.build/Debug-iphoneos/Trap.build/Objects-normal/armv7/Types.o
-6c97bcab8a91dcd63ad9acf7bc37b84f 6b3d31bcf2c08f0d64030160d0497c42 ffffffffffffffffffffffffffffffff 144864 /Users/maxtkach/Desktop/Trap/build/Trap.build/Debug-iphoneos/Trap.build/Objects-normal/armv7/TrapAppDelegate.o
+6c97bcabc05e37213ad9acf7bc37a689 6b3d31bcf2c08f0d64030160d0497c42 ffffffffffffffffffffffffffffffff 145640 /Users/maxtkach/Desktop/Trap/build/Trap.build/Debug-iphoneos/Trap.build/Objects-normal/armv7/TrapAppDelegate.o
 6c97bcab8dec33483ad9acf7bc37b2d5 aeec204cd5fa7f3d45dbfae25f3ce50d ffffffffffffffffffffffffffffffff 6772 /Users/maxtkach/Desktop/Trap/build/Trap.build/Debug-iphoneos/Trap.build/Objects-normal/armv7/main.o
 00000000000000000000000000000000 5713e4d0391433e8dd9da18c104c1f20 ffffffffffffffffffffffffffffffff 102 /Users/maxtkach/Desktop/Trap/build/Debug-iphoneos/Trap.app.dSYM
-ffffffffffffffffffffffffffffffff 3438f5c9ebc68a4af854a3f47254f329 ffffffffffffffffffffffffffffffff 1462 /Users/maxtkach/Desktop/Trap/build/Debug-iphoneos/Trap.app
+22baaf232b321e642845af91c7b9d36b 3438f5c9ebc68a4af854a3f47254f329 ffffffffffffffffffffffffffffffff 1462 /Users/maxtkach/Desktop/Trap/build/Debug-iphoneos/Trap.app
 00000000000000000000000000000000 abd8711a7c862a25a5dd71e5e4183a71 ffffffffffffffffffffffffffffffff 5243 /Users/maxtkach/Desktop/Trap/build/Debug-iphoneos/Trap.app/Button Refresh_32.png
 00000000000000000000000000000000 8fb86e5e690fbd5e0087c57adb972943 ffffffffffffffffffffffffffffffff 2064 /Users/maxtkach/Desktop/Trap/build/Debug-iphoneos/Trap.app/Button config.png
 00000000000000000000000000000000 7dec1e246833f9bbe22ebfc61ff40bce ffffffffffffffffffffffffffffffff 24945 /Users/maxtkach/Desktop/Trap/build/Debug-iphoneos/Trap.app/Button Stop_256.png
@@ -44,13 +45,13 @@ ffffffffffffffffffffffffffffffff 3438f5c9ebc68a4af854a3f47254f329 ffffffffffffff
 00000000000000000000000000000000 ab6dff31e187b87dd384caec62d8580b ffffffffffffffffffffffffffffffff 5037 /Users/maxtkach/Desktop/Trap/build/Debug-iphoneos/Trap.app/Button Add_32.png
 00000000000000000000000000000000 a4cc521aebbbe78e811408406e704c8e ffffffffffffffffffffffffffffffff 14419 /Users/maxtkach/Desktop/Trap/build/Debug-iphoneos/Trap.app/Icon.png
 00000000000000000000000000000000 39a367c25cb81d7c8312e595362a85bb ffffffffffffffffffffffffffffffff 464265 /Users/maxtkach/Desktop/Trap/build/Debug-iphoneos/Trap.app/Default.png
-ffffffffffffffffffffffffffffffff 5ad738e5bbf65d6c62b8dae4e273ea44 ffffffffffffffffffffffffffffffff 788 /Users/maxtkach/Desktop/Trap/build/Debug-iphoneos/Trap.app/Main.xml
+00000000000000000000000000000000 5ad738e5bbf65d6c62b8dae4e273ea44 ffffffffffffffffffffffffffffffff 791 /Users/maxtkach/Desktop/Trap/build/Debug-iphoneos/Trap.app/Main.xml
 00000000000000000000000000000000 dbf2e7e76d1e97ff663db24efeac4b65 ffffffffffffffffffffffffffffffff 8906 /Users/maxtkach/Desktop/Trap/build/Debug-iphoneos/Trap.app/Hex-pole-MB.dat
 00000000000000000000000000000000 7e1d75a3023ee6f8d2cce9d3156ab370 ffffffffffffffffffffffffffffffff 440611 /Users/maxtkach/Desktop/Trap/build/Debug-iphoneos/Trap.app/Coils-XYZ-MB2.dat
-000000004ccd631d00000000000189c4 af1bb0ddf5e82c9ae31bdd5d98f6e51f ffffffffffffffffffffffffffffffff 8167 /Users/maxtkach/Desktop/Trap/build/Debug-iphoneos/Trap.app/MainWindow.nib
+000000004d0ce0c5000000000001ae93 af1bb0ddf5e82c9ae31bdd5d98f6e51f ffffffffffffffffffffffffffffffff 8788 /Users/maxtkach/Desktop/Trap/build/Debug-iphoneos/Trap.app/MainWindow.nib
 00000000000000000000000000000000 0321f5a17b6b40f735ddfff6eb16773b ffffffffffffffffffffffffffffffff 348 /Users/maxtkach/Desktop/Trap/build/Debug-iphoneos/Trap.app/Shader.vsh
 00000000000000000000000000000000 d223e1d669c1b7667f8adb57bf745b31 ffffffffffffffffffffffffffffffff 216 /Users/maxtkach/Desktop/Trap/build/Debug-iphoneos/Trap.app/Shader.fsh
-1f56752911daccf52672ff6d0b08d8ea e3ea5b3ed5631cfed5bcdbf5fac4d677 ffffffffffffffffffffffffffffffff 280464 /Users/maxtkach/Desktop/Trap/build/Debug-iphoneos/Trap.app/Trap
+551b82b0287ca3cfacde64649ad4984b e3ea5b3ed5631cfed5bcdbf5fac4d677 ffffffffffffffffffffffffffffffff 289776 /Users/maxtkach/Desktop/Trap/build/Debug-iphoneos/Trap.app/Trap
 00000000073413f700000000000001f2 1ca083912ef1be3e417b8ad656e9dd1a ffffffffffffffffffffffffffffffff 1986844 /var/folders/vP/vP0lLz-mERmzuAjlK2aD5E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Trap_Prefix-cxznamuohneyexanmhqjkkdscfor/Trap_Prefix.pch.gch
 00000000073413f700000000000001f2 6c97bcab8a659e3c3ad9acf7bc37bbd7 ffffffffffffffffffffffffffffffff 9962020 /var/folders/vP/vP0lLz-mERmzuAjlK2aD5E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Trap_Prefix-fezekyqcdigyiqhfpbqxljjybmvs/Trap_Prefix.pch.gch
 00000000000000000000000000000000 abb23f76a4b3adfde5a7d9edf6fc4ffa ffffffffffffffffffffffffffffffff 8 /Users/maxtkach/Desktop/Trap/build/Debug-iphoneos/Trap.app/PkgInfo

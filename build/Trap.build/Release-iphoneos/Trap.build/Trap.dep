@@ -1,10 +1,11 @@
 00000000000000000000000000000000 ca287640cd3db1534a99c73885b55cc9 ffffffffffffffffffffffffffffffff 0 /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/com.apple.build-tools.platform.validate
-0970717e73a9693584d08328fd1d91b2 1ed64f3a192ffe416e2e1cb1eb1c9d80 ffffffffffffffffffffffffffffffff 156272 /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/EAGLView.o
-0970717e386a026284d08328fd1d96e1 c6f300b48c1ddf885bea11fcce967f71 ffffffffffffffffffffffffffffffff 122808 /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/TrapEditor.o
-0970717e3fac7a6484d08328fd1db484 0b3d8a08656f1bc9469678ca5ab3d180 ffffffffffffffffffffffffffffffff 236740 /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/TrapEditor3D.o
+0970717e75ac07d584d08328fd1d8ee4 6a32b8eed13d1d23c73eac8247f346e0 ffffffffffffffffffffffffffffffff 163908 /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/ConfigView.o
+0970717e7261949d84d08328fd1d9162 1ed64f3a192ffe416e2e1cb1eb1c9d80 ffffffffffffffffffffffffffffffff 155060 /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/EAGLView.o
+0970717e39ac668e84d08328fd1d9666 c6f300b48c1ddf885bea11fcce967f71 ffffffffffffffffffffffffffffffff 122804 /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/TrapEditor.o
+0970717e3e613c5484d08328fd1db425 0b3d8a08656f1bc9469678ca5ab3d180 ffffffffffffffffffffffffffffffff 236728 /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/TrapEditor3D.o
 6b1033550e05abd8fb9d48da61ad7d96 8c08e2be33220d294d45134982abe91a ffffffffffffffffffffffffffffffff 129292 /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/Particles.o
 6b10335545f32ec5fb9d48da61ad7524 add214c483bf57806ac85c7ef729855c ffffffffffffffffffffffffffffffff 374012 /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/MagneticField.o
-6b10335509a9baf3fb9d48da61ada8cc ffc84993ad978dab656a75d027ea5afc ffffffffffffffffffffffffffffffff 229804 /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/Experiment.o
+6b10335509a9bb59fb9d48da61adab1c ffc84993ad978dab656a75d027ea5afc ffffffffffffffffffffffffffffffff 229912 /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/Experiment.o
 6b1033550efba87ffb9d48da61ad7e84 d087f1d0dfbedd6b901c4925b50d8b7d ffffffffffffffffffffffffffffffff 100124 /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/ElectricField.o
 6b103355093f2af3fb9d48da61ada515 e30a475e9e50cee7759ec7c4baad247e ffffffffffffffffffffffffffffffff 85048 /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/Console.o
 6b103355095f272cfb9d48da61ad7d75 b79465a18e3ac6ccb47df0656ff1956f ffffffffffffffffffffffffffffffff 95092 /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/Config.o
@@ -13,10 +14,12 @@
 6b1033550e1caf83fb9d48da61ad8ee4 4c1e34568573a9ea3257673b85c6bb8a ffffffffffffffffffffffffffffffff 202108 /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/tinyxml.o
 6b10335545ab12b9fb9d48da61ad87da cc07fae83794a4d6f1b0e2ee15cff8ca ffffffffffffffffffffffffffffffff 16368 /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/tinystr.o
 6b10335509512e30fb9d48da61adf797 de7127133ff931a81e55cc613cfb34ef ffffffffffffffffffffffffffffffff 94756 /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/Types.o
-0970717e746e5fd084d08328fd1d961b 54c3dd861ed351c73e5afa1cc9559b1c ffffffffffffffffffffffffffffffff 147420 /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/TrapAppDelegate.o
+0970717e3ea0d0f684d08328fd1d89ee 54c3dd861ed351c73e5afa1cc9559b1c ffffffffffffffffffffffffffffffff 150504 /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/TrapAppDelegate.o
 0970717e7312d49f84d08328fd1d9db2 cd40f321ca554ebaafcddcc86dcaca22 ffffffffffffffffffffffffffffffff 6740 /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/main.o
 00000000000000000000000000000000 07106ee50ef3c7dd24f58df1ef2c478f ffffffffffffffffffffffffffffffff 102 /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app.dSYM
-d32da13c113f0926d3f597442a8ea739 e32726c8af147b4edb3b768799347d3a ffffffffffffffffffffffffffffffff 1394 /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app
+394ca1fd13f9aad227d452daf3bdbfa9 e32726c8af147b4edb3b768799347d3a ffffffffffffffffffffffffffffffff 1462 /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app
+00000000000000000000000000000000 cb02a12565af66e7b1580ab287d140c9 ffffffffffffffffffffffffffffffff 5243 /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Button Refresh_32.png
+00000000000000000000000000000000 42216874893456f60697e086e40da025 ffffffffffffffffffffffffffffffff 2064 /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Button config.png
 00000000000000000000000000000000 4ceb3b125ce773b34b11ed2626399dde ffffffffffffffffffffffffffffffff 24945 /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Button Stop_256.png
 00000000000000000000000000000000 0b9ba3e631e66f3b44fda10a8dc9f238 ffffffffffffffffffffffffffffffff 13260 /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Button Stop_128.png
 00000000000000000000000000000000 9c181d8668f821a5261063b50774125d ffffffffffffffffffffffffffffffff 4691 /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Button Stop_32.png
@@ -43,13 +46,13 @@ d32da13c113f0926d3f597442a8ea739 e32726c8af147b4edb3b768799347d3a ffffffffffffff
 00000000000000000000000000000000 2a4dcd21725ea05c515751d630e35c26 ffffffffffffffffffffffffffffffff 5037 /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Button Add_32.png
 00000000000000000000000000000000 19be2360746fafb6b2b6b168e111ea32 ffffffffffffffffffffffffffffffff 14419 /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Icon.png
 00000000000000000000000000000000 26ac54bb9636c7eda4c9fdcbd0a85011 ffffffffffffffffffffffffffffffff 464265 /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Default.png
-00000000000000000000000000000000 385afefc9043fb800e3d6cd8963d3756 ffffffffffffffffffffffffffffffff 788 /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Main.xml
+00000000000000000000000000000000 385afefc9043fb800e3d6cd8963d3756 ffffffffffffffffffffffffffffffff 791 /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Main.xml
 00000000000000000000000000000000 e747d4fa4317ced430813e733c44500c ffffffffffffffffffffffffffffffff 8906 /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Hex-pole-MB.dat
 00000000000000000000000000000000 110a41fd0032b0a7529da480a68f6517 ffffffffffffffffffffffffffffffff 440611 /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Coils-XYZ-MB2.dat
-000000004ccd382e0000000000008238 68753da18659e5a46b89b8ca6fc9d0f3 ffffffffffffffffffffffffffffffff 2534 /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/MainWindow.nib
+000000004d0ce0c5000000000001ae93 68753da18659e5a46b89b8ca6fc9d0f3 ffffffffffffffffffffffffffffffff 8789 /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/MainWindow.nib
 00000000000000000000000000000000 3e03848f120d4463233d9c6857b08973 ffffffffffffffffffffffffffffffff 348 /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Shader.vsh
 00000000000000000000000000000000 c4028a5877662cb383f20ce82fa9688a ffffffffffffffffffffffffffffffff 216 /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Shader.fsh
-34b99bf27a87e14884b4f1f454277759 d58823ba4bd9da35dbf271099141de58 ffffffffffffffffffffffffffffffff 177680 /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Trap
+57fb5262951baa46c75ade5eeec9a38e d58823ba4bd9da35dbf271099141de58 ffffffffffffffffffffffffffffffff 187744 /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Trap
 00000000073413f700000000000001f2 6b1033554591777ffb9d48da61adb4b7 ffffffffffffffffffffffffffffffff 1966364 /var/folders/vP/vP0lLz-mERmzuAjlK2aD5E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Trap_Prefix-ehiweuamrryevpfhqkrhwowlxmrq/Trap_Prefix.pch.gch
 00000000073413f700000000000001f2 0970717e749b79eb84d08328fd1d94b0 ffffffffffffffffffffffffffffffff 9962020 /var/folders/vP/vP0lLz-mERmzuAjlK2aD5E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Trap_Prefix-cmnnpdzgzdtfcrcoqsyotgzolpwe/Trap_Prefix.pch.gch
 00000000000000000000000000000000 65e54b1810f2af182bbd7ce9a8c576af ffffffffffffffffffffffffffffffff 8 /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/PkgInfo

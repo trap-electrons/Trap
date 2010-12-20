@@ -23,5 +23,6 @@
 
 - (void)render; 
 - (BOOL)resizeFromLayer:(CAEAGLLayer *)layer;
+- (void)setExperiment:(Experiment *)e;
 
 @end

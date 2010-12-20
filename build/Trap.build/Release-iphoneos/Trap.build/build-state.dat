@@ -1,7 +1,7 @@
 TTrap
 v7
 r0
-t310210750.292686
+t314558694.295817
 cCheck dependencies
 cCpResource build/Release-iphoneos/Trap.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist
 cProcessInfoPlistFile /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Info.plist Trap-Info.plist
@@ -23,6 +23,7 @@ cCompileC build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/Part
 cCompileC build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/TrapEditor3D.o /Users/maxtkach/Desktop/Trap/Classes/Graph/TrapEditor3D.mm normal armv7 objective-c++ com.apple.compilers.gcc.4_2
 cCompileC build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/TrapEditor.o /Users/maxtkach/Desktop/Trap/Classes/Graph/TrapEditor.mm normal armv7 objective-c++ com.apple.compilers.gcc.4_2
 cCompileC build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/EAGLView.o /Users/maxtkach/Desktop/Trap/Classes/Graph/EAGLView.mm normal armv7 objective-c++ com.apple.compilers.gcc.4_2
+cCompileC build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/ConfigView.o /Users/maxtkach/Desktop/Trap/Classes/ConfigView.mm normal armv7 objective-c++ com.apple.compilers.gcc.4_2
 cLd /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Trap normal armv7
 cGenerateDSYMFile /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app.dSYM /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Trap
 cCpResource build/Release-iphoneos/Trap.app/Shader.fsh Shaders/Shader.fsh
@@ -57,6 +58,8 @@ cCopyPNGFile "/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Butto
 cCopyPNGFile "/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Button Stop_32.png" "Resources/Images/Button Stop_32.png"
 cCopyPNGFile "/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Button Stop_128.png" "Resources/Images/Button Stop_128.png"
 cCopyPNGFile "/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Button Stop_256.png" "Resources/Images/Button Stop_256.png"
+cCopyPNGFile "/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Button config.png" "Resources/Images/Button config.png"
+cCopyPNGFile "/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Button Refresh_32.png" "Resources/Images/Button Refresh_32.png"
 cPhaseScriptExecution "Run Script" /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Script-C1299632126E106A0040F0D8.sh
 cTouch /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app
 cCodeSign /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app
@@ -208,6 +211,20 @@ i<vector>
 i"stdio.h"
 i<tr1/memory>
 
+N/Users/maxtkach/Desktop/Trap/Classes/ConfigView.h
+c000000004D0F85C10000000000000463
+t1292862913
+s1123
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+i"Experiment.h"
+
+N/Users/maxtkach/Desktop/Trap/Classes/ConfigView.mm
+c000000004D0F8690000000000000055B
+t1292863120
+s1371
+i"ConfigView.h"
+
 N/Users/maxtkach/Desktop/Trap/Classes/EAGLView.h
 c000000004CAB0A2C00000000000004DA
 t1286277676
@@ -261,18 +278,18 @@ i<OpenGLES/EAGL.h>
 i<OpenGLES/EAGLDrawable.h>
 
 N/Users/maxtkach/Desktop/Trap/Classes/Graph/EAGLView.h
-c000000004CC88A3B00000000000004D8
-t1288211003
-s1240
+c000000004D0F3E1000000000000004D5
+t1292844560
+s1237
 i<UIKit/UIKit.h>
 i<QuartzCore/QuartzCore.h>
 i"TrapEditor.h"
 i"../Trap/Experiment.h"
 
 N/Users/maxtkach/Desktop/Trap/Classes/Graph/EAGLView.mm
-c000000004CCD393200000000000017B5
-t1288517938
-s6069
+c000000004D0F42E0000000000000174F
+t1292845792
+s5967
 i"EAGLView.h"
 i"TrapEditor3D.h"
 
@@ -287,24 +304,24 @@ i<OpenGLES/ES1/glext.h>
 i"../Common/Types.h"
 
 N/Users/maxtkach/Desktop/Trap/Classes/Graph/TrapEditor.h
-c000000004CC8572100000000000001D5
-t1288197921
-s469
+c000000004D0F3CB900000000000001FC
+t1292844217
+s508
 i<QuartzCore/QuartzCore.h>
 i<OpenGLES/EAGL.h>
 i<OpenGLES/EAGLDrawable.h>
 i"../Trap/Experiment.h"
 
 N/Users/maxtkach/Desktop/Trap/Classes/Graph/TrapEditor.mm
-c000000004CC859510000000000000195
-t1288198481
-s405
+c000000004D0F3CDA00000000000001CF
+t1292844250
+s463
 i"TrapEditor.h"
 
 N/Users/maxtkach/Desktop/Trap/Classes/Graph/TrapEditor3D.h
-c000000004CC20C41000000000000052F
-t1287785537
-s1327
+c000000004D0F3E100000000000000508
+t1292844560
+s1288
 i"TrapEditor.h"
 i<OpenGLES/ES1/gl.h>
 i<OpenGLES/ES1/glext.h>
@@ -313,9 +330,9 @@ i"../Common/Types.h"
 i"../Trap/Experiment.h"
 
 N/Users/maxtkach/Desktop/Trap/Classes/Graph/TrapEditor3D.mm
-c000000004CC893550000000000003D2F
-t1288213333
-s15663
+c000000004D0F8CAC0000000000003D80
+t1292864684
+s15744
 i"TrapEditor3D.h"
 
 N/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/XmlParser/tinystr.cpp
@@ -411,15 +428,15 @@ i"Config.h"
 i"math.h"
 
 N/Users/maxtkach/Desktop/Trap/Classes/Trap/Experiment.cpp
-c000000004CC9E4010000000000001D39
-t1288299521
-s7481
+c000000004D0F8F540000000000001E1D
+t1292865364
+s7709
 i"Experiment.h"
 
 N/Users/maxtkach/Desktop/Trap/Classes/Trap/Experiment.h
-c000000004CC9E58D000000000000067C
-t1288299917
-s1660
+c000000004D0F8F720000000000000688
+t1292865394
+s1672
 i"Particles.h"
 i"ElectricField.h"
 i"MagneticField.h"
@@ -454,11 +471,12 @@ i"Config.h"
 i"math.h"
 
 N/Users/maxtkach/Desktop/Trap/Classes/TrapAppDelegate.h
-c000000004CC9EA4A00000000000002AC
-t1288301130
-s684
+c000000004D0F85AD00000000000003A8
+t1292862893
+s936
 i<UIKit/UIKit.h>
 i"Trap/Experiment.h"
+i"ConfigView.h"
 
 N/Users/maxtkach/Desktop/Trap/Classes/TrapAppDelegate.m
 c000000004CAB0A2C0000000000000328
@@ -468,9 +486,9 @@ i"TrapAppDelegate.h"
 i"EAGLView.h"
 
 N/Users/maxtkach/Desktop/Trap/Classes/TrapAppDelegate.mm
-c000000004CCD38E60000000000000766
-t1288517862
-s1894
+c000000004D0F863200000000000007BA
+t1292863026
+s1978
 i"TrapAppDelegate.h"
 i"Graph/EAGLView.h"
 
@@ -485,14 +503,14 @@ t1277364008
 s8906
 
 N/Users/maxtkach/Desktop/Trap/Input/Main.xml
-c000000004CC9ED130000000000000314
-t1288301843
-s788
+c000000004CCD63830000000000000317
+t1288528771
+s791
 
 N/Users/maxtkach/Desktop/Trap/MainWindow.xib
-c000000004CCD382E0000000000008238
-t1288517678
-s33336
+c000000004D0CE0C5000000000001AE93
+t1292689605
+s110227
 
 N/Users/maxtkach/Desktop/Trap/Resources/Images/Button Add_256.png
 c000000004CC9EB7E00000000000075D4
@@ -599,6 +617,11 @@ c000000004CC9E8B30000000000008D1C
 t1288300723
 s36124
 
+N/Users/maxtkach/Desktop/Trap/Resources/Images/Button Refresh_32.png
+c000000004CCD4A54000000000000144E
+t1288522324
+s5198
+
 N/Users/maxtkach/Desktop/Trap/Resources/Images/Button Stop_128.png
 c000000004CC9E80800000000000031B9
 t1288300552
@@ -613,6 +636,11 @@ N/Users/maxtkach/Desktop/Trap/Resources/Images/Button Stop_32.png
 c000000004CC9EB4200000000000011D4
 t1288301378
 s4564
+
+N/Users/maxtkach/Desktop/Trap/Resources/Images/Button config.png
+c000000004CCD49110000000000000880
+t1288522001
+s2176
 
 N/Users/maxtkach/Desktop/Trap/Resources/Images/Default.png
 c000000004CC03A9A00000000000626DE
@@ -648,11 +676,11 @@ i<Foundation/Foundation.h>
 i<UIKit/UIKit.h>
 
 N/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app
-t1288517941
-s1394
+t1292865860
+s1462
 
 N/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app.dSYM
-t1288517940
+t1292865858
 s102
 
 N/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Button Add_256.png
@@ -739,6 +767,10 @@ N/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Button Refresh_256
 t1288301170
 s35924
 
+N/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Button Refresh_32.png
+t1292689623
+s5243
+
 N/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Button Stop_128.png
 t1288301170
 s13260
@@ -750,6 +782,10 @@ s24945
 N/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Button Stop_32.png
 t1288301533
 s4691
+
+N/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Button config.png
+t1292689622
+s2064
 
 N/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Coils-XYZ-MB2.dat
 t1287825148
@@ -772,12 +808,12 @@ t1287827674
 s967
 
 N/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Main.xml
-t1288301846
-s788
+t1292689622
+s791
 
 N/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/MainWindow.nib
-t1288517691
-s2534
+t1292689624
+s8789
 
 N/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/PkgInfo
 t1287827674
@@ -796,8 +832,8 @@ t1287825147
 s348
 
 N/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Trap
-t1288517940
-s177680
+t1292865858
+s187744
 
 N/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/embedded.mobileprovision
 t1286278738
@@ -811,13 +847,17 @@ N/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objec
 t1287825141
 s95092
 
+N/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/ConfigView.o
+t1292865858
+s163908
+
 N/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/Console.o
 t1287825141
 s85048
 
 N/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/EAGLView.o
-t1288517940
-s156272
+t1292865857
+s155060
 
 N/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/ES1Renderer.o
 t1286278738
@@ -832,8 +872,8 @@ t1287825142
 s100124
 
 N/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/Experiment.o
-t1288299920
-s229804
+t1292865853
+s229912
 
 N/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/MagneticField.o
 t1287825145
@@ -844,21 +884,21 @@ t1287825144
 s129292
 
 N/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/Trap.LinkFileList
-c000000004CC2A6F000000000000006B7
-t1287825136
-s1719
+c000000004D0CE0CF0000000000000723
+t1292689615
+s1827
 
 N/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/TrapAppDelegate.o
-t1288517863
-s147420
+t1292865852
+s150504
 
 N/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/TrapEditor.o
-t1288299921
-s122808
+t1292865855
+s122804
 
 N/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/TrapEditor3D.o
-t1288299921
-s236740
+t1292865856
+s236728
 
 N/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/Types.o
 t1287825139
@@ -957,16 +997,16 @@ s1237
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies310210749#310210749#0(199"[BWARN]Code Sign warning: code-signing identity 'iPhone Developer' matches multiple identities : 'iPhone Developer', 'iPhone Developer: PAVEL SAVICH (HN5M9U4874)' -- 'iPhone Developer' will be used.1(22@191"Code Sign warning: code-signing identity 'iPhone Developer' matches multiple identities : 'iPhone Developer', 'iPhone Developer: PAVEL SAVICH (HN5M9U4874)' -- 'iPhone Developer' will be used.310210749#4294967295#0#0(1@0"0(0#1#0"2421120960#0"0#
+lSLF07#2@18"Check dependencies314558693#314558693#0(199"[BWARN]Code Sign warning: code-signing identity 'iPhone Developer' matches multiple identities : 'iPhone Developer', 'iPhone Developer: PAVEL SAVICH (HN5M9U4874)' -- 'iPhone Developer' will be used.1(22@191"Code Sign warning: code-signing identity 'iPhone Developer' matches multiple identities : 'iPhone Developer', 'iPhone Developer: PAVEL SAVICH (HN5M9U4874)' -- 'iPhone Developer' will be used.314558693#4294967295#0#0(1@0"0(0#1#0"2450993808#0"0#
 
 CCodeSign /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app
-s310210741.005119
-e310210741.333018
+s314558660.180143
+e314558660.646657
 r1
 xCodeSign
 x/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app
 o/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app: replacing existing signature
-lSLF07#2@40"CodeSign build/Release-iphoneos/Trap.app310210741#310210741#0(91"/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app: replacing existing signature0(0#0#60"/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app2421120960#472"    cd /Users/maxtkach/Desktop/Trap    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer" --resource-rules=/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/ResourceRules.plist /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app0#
+lSLF07#2@40"CodeSign build/Release-iphoneos/Trap.app314558660#314558660#0(91"/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app: replacing existing signature0(0#0#60"/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app2450993808#472"    cd /Users/maxtkach/Desktop/Trap    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer" --resource-rules=/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/ResourceRules.plist /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app0#
 
 CCompileC build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/Config.o /Users/maxtkach/Desktop/Trap/Classes/Trap/Config.cpp normal armv7 c++ com.apple.compilers.gcc.4_2
 s309517940.638673
@@ -980,6 +1020,19 @@ xarmv7
 xc++
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@60"Compile /Users/maxtkach/Desktop/Trap/Classes/Trap/Config.cpp309517940#309517941#0(0"0(0#0#52"/Users/maxtkach/Desktop/Trap/Classes/Trap/Config.cpp2421120960#1670"    cd /Users/maxtkach/Desktop/Trap    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x c++ -arch armv7 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O3 -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -funroll-loops -ffast-math -fvisibility=hidden -fvisibility-inlines-hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-generated-files.hmap -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-own-target-headers.hmap -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-all-target-headers.hmap -iquote /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-project-headers.hmap -F/Users/maxtkach/Desktop/Trap/build/Release-iphoneos -I/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/include -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources/armv7 -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/vP/vP0lLz-mERmzuAjlK2aD5E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Trap_Prefix-ehiweuamrryevpfhqkrhwowlxmrq/Trap_Prefix.pch -c /Users/maxtkach/Desktop/Trap/Classes/Trap/Config.cpp -o /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/Config.o0#
+
+CCompileC build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/ConfigView.o /Users/maxtkach/Desktop/Trap/Classes/ConfigView.mm normal armv7 objective-c++ com.apple.compilers.gcc.4_2
+s314558656.567223
+e314558658.107303
+r1
+xCompileC
+xbuild/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/ConfigView.o
+x/Users/maxtkach/Desktop/Trap/Classes/ConfigView.mm
+xnormal
+xarmv7
+xobjective-c++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@58"Compile /Users/maxtkach/Desktop/Trap/Classes/ConfigView.mm314558656#314558658#0(0"0(0#0#50"/Users/maxtkach/Desktop/Trap/Classes/ConfigView.mm2450993808#1682"    cd /Users/maxtkach/Desktop/Trap    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch armv7 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O3 -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -funroll-loops -ffast-math -fvisibility=hidden -fvisibility-inlines-hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-generated-files.hmap -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-own-target-headers.hmap -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-all-target-headers.hmap -iquote /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-project-headers.hmap -F/Users/maxtkach/Desktop/Trap/build/Release-iphoneos -I/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/include -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources/armv7 -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/vP/vP0lLz-mERmzuAjlK2aD5E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Trap_Prefix-cmnnpdzgzdtfcrcoqsyotgzolpwe/Trap_Prefix.pch -c /Users/maxtkach/Desktop/Trap/Classes/ConfigView.mm -o /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/ConfigView.o0#
 
 CCompileC build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/Console.o /Users/maxtkach/Desktop/Trap/Classes/Trap/Console.cpp normal armv7 c++ com.apple.compilers.gcc.4_2
 s309517941.293053
@@ -1008,8 +1061,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@55"Compile /Users/maxtkach/Desktop/Trap/Classes/EAGLView.m307971538#307971538#0(0"0(0#0#47"/Users/maxtkach/Desktop/Trap/Classes/EAGLView.m2421120960#1629"    cd /Users/maxtkach/Desktop/Trap    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-generated-files.hmap -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-own-target-headers.hmap -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-all-target-headers.hmap -iquote /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-project-headers.hmap -F/Users/maxtkach/Desktop/Trap/build/Release-iphoneos -I/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/include -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources/armv7 -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/vP/vP0lLz-mERmzuAjlK2aD5E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Trap_Prefix-bijddshulscrzecwskdfgrgfazuw/Trap_Prefix.pch -c /Users/maxtkach/Desktop/Trap/Classes/EAGLView.m -o /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/EAGLView.o0#
 
 CCompileC build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/EAGLView.o /Users/maxtkach/Desktop/Trap/Classes/Graph/EAGLView.mm normal armv7 objective-c++ com.apple.compilers.gcc.4_2
-s310210739.513942
-e310210740.390921
+s314558655.115937
+e314558657.054379
 r1
 xCompileC
 xbuild/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/EAGLView.o
@@ -1018,7 +1071,7 @@ xnormal
 xarmv7
 xobjective-c++
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@62"Compile /Users/maxtkach/Desktop/Trap/Classes/Graph/EAGLView.mm310210739#310210740#0(0"0(0#0#54"/Users/maxtkach/Desktop/Trap/Classes/Graph/EAGLView.mm2421120960#1684"    cd /Users/maxtkach/Desktop/Trap    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch armv7 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O3 -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -funroll-loops -ffast-math -fvisibility=hidden -fvisibility-inlines-hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-generated-files.hmap -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-own-target-headers.hmap -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-all-target-headers.hmap -iquote /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-project-headers.hmap -F/Users/maxtkach/Desktop/Trap/build/Release-iphoneos -I/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/include -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources/armv7 -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/vP/vP0lLz-mERmzuAjlK2aD5E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Trap_Prefix-cmnnpdzgzdtfcrcoqsyotgzolpwe/Trap_Prefix.pch -c /Users/maxtkach/Desktop/Trap/Classes/Graph/EAGLView.mm -o /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/EAGLView.o0#
+lSLF07#2@62"Compile /Users/maxtkach/Desktop/Trap/Classes/Graph/EAGLView.mm314558655#314558657#0(0"0(0#0#54"/Users/maxtkach/Desktop/Trap/Classes/Graph/EAGLView.mm2450993808#1684"    cd /Users/maxtkach/Desktop/Trap    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch armv7 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O3 -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -funroll-loops -ffast-math -fvisibility=hidden -fvisibility-inlines-hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-generated-files.hmap -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-own-target-headers.hmap -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-all-target-headers.hmap -iquote /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-project-headers.hmap -F/Users/maxtkach/Desktop/Trap/build/Release-iphoneos -I/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/include -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources/armv7 -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/vP/vP0lLz-mERmzuAjlK2aD5E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Trap_Prefix-cmnnpdzgzdtfcrcoqsyotgzolpwe/Trap_Prefix.pch -c /Users/maxtkach/Desktop/Trap/Classes/Graph/EAGLView.mm -o /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/EAGLView.o0#
 
 CCompileC build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/ES1Renderer.o /Users/maxtkach/Desktop/Trap/Classes/ES1Renderer.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 s307971538.282388
@@ -1060,8 +1113,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@67"Compile /Users/maxtkach/Desktop/Trap/Classes/Trap/ElectricField.cpp309517941#309517942#0(0"0(0#0#59"/Users/maxtkach/Desktop/Trap/Classes/Trap/ElectricField.cpp2421120960#1684"    cd /Users/maxtkach/Desktop/Trap    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x c++ -arch armv7 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O3 -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -funroll-loops -ffast-math -fvisibility=hidden -fvisibility-inlines-hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-generated-files.hmap -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-own-target-headers.hmap -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-all-target-headers.hmap -iquote /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-project-headers.hmap -F/Users/maxtkach/Desktop/Trap/build/Release-iphoneos -I/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/include -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources/armv7 -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/vP/vP0lLz-mERmzuAjlK2aD5E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Trap_Prefix-ehiweuamrryevpfhqkrhwowlxmrq/Trap_Prefix.pch -c /Users/maxtkach/Desktop/Trap/Classes/Trap/ElectricField.cpp -o /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/ElectricField.o0#
 
 CCompileC build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/Experiment.o /Users/maxtkach/Desktop/Trap/Classes/Trap/Experiment.cpp normal armv7 c++ com.apple.compilers.gcc.4_2
-s309992718.450484
-e309992720.475377
+s314558649.654908
+e314558653.643748
 r1
 xCompileC
 xbuild/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/Experiment.o
@@ -1070,7 +1123,7 @@ xnormal
 xarmv7
 xc++
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@64"Compile /Users/maxtkach/Desktop/Trap/Classes/Trap/Experiment.cpp309992718#309992720#0(0"0(0#0#56"/Users/maxtkach/Desktop/Trap/Classes/Trap/Experiment.cpp2421120960#1678"    cd /Users/maxtkach/Desktop/Trap    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x c++ -arch armv7 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O3 -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -funroll-loops -ffast-math -fvisibility=hidden -fvisibility-inlines-hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-generated-files.hmap -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-own-target-headers.hmap -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-all-target-headers.hmap -iquote /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-project-headers.hmap -F/Users/maxtkach/Desktop/Trap/build/Release-iphoneos -I/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/include -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources/armv7 -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/vP/vP0lLz-mERmzuAjlK2aD5E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Trap_Prefix-ehiweuamrryevpfhqkrhwowlxmrq/Trap_Prefix.pch -c /Users/maxtkach/Desktop/Trap/Classes/Trap/Experiment.cpp -o /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/Experiment.o0#
+lSLF07#2@64"Compile /Users/maxtkach/Desktop/Trap/Classes/Trap/Experiment.cpp314558649#314558653#0(0"0(0#0#56"/Users/maxtkach/Desktop/Trap/Classes/Trap/Experiment.cpp2450993808#1678"    cd /Users/maxtkach/Desktop/Trap    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x c++ -arch armv7 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O3 -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -funroll-loops -ffast-math -fvisibility=hidden -fvisibility-inlines-hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-generated-files.hmap -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-own-target-headers.hmap -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-all-target-headers.hmap -iquote /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-project-headers.hmap -F/Users/maxtkach/Desktop/Trap/build/Release-iphoneos -I/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/include -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources/armv7 -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/vP/vP0lLz-mERmzuAjlK2aD5E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Trap_Prefix-ehiweuamrryevpfhqkrhwowlxmrq/Trap_Prefix.pch -c /Users/maxtkach/Desktop/Trap/Classes/Trap/Experiment.cpp -o /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/Experiment.o0#
 
 CCompileC build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/MagneticField.o /Users/maxtkach/Desktop/Trap/Classes/Trap/MagneticField.cpp normal armv7 c++ com.apple.compilers.gcc.4_2
 s309517942.279906
@@ -1112,8 +1165,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@62"Compile /Users/maxtkach/Desktop/Trap/Classes/TrapAppDelegate.m307971538#307971538#0(0"0(0#0#54"/Users/maxtkach/Desktop/Trap/Classes/TrapAppDelegate.m2421120960#1643"    cd /Users/maxtkach/Desktop/Trap    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-generated-files.hmap -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-own-target-headers.hmap -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-all-target-headers.hmap -iquote /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-project-headers.hmap -F/Users/maxtkach/Desktop/Trap/build/Release-iphoneos -I/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/include -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources/armv7 -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/vP/vP0lLz-mERmzuAjlK2aD5E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Trap_Prefix-bijddshulscrzecwskdfgrgfazuw/Trap_Prefix.pch -c /Users/maxtkach/Desktop/Trap/Classes/TrapAppDelegate.m -o /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/TrapAppDelegate.o0#
 
 CCompileC build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/TrapAppDelegate.o /Users/maxtkach/Desktop/Trap/Classes/TrapAppDelegate.mm normal armv7 objective-c++ com.apple.compilers.gcc.4_2
-s310210662.640778
-e310210663.910678
+s314558649.649330
+e314558652.679757
 r1
 xCompileC
 xbuild/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/TrapAppDelegate.o
@@ -1122,11 +1175,11 @@ xnormal
 xarmv7
 xobjective-c++
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@63"Compile /Users/maxtkach/Desktop/Trap/Classes/TrapAppDelegate.mm310210662#310210663#0(0"0(0#0#55"/Users/maxtkach/Desktop/Trap/Classes/TrapAppDelegate.mm2421120960#1692"    cd /Users/maxtkach/Desktop/Trap    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch armv7 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O3 -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -funroll-loops -ffast-math -fvisibility=hidden -fvisibility-inlines-hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-generated-files.hmap -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-own-target-headers.hmap -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-all-target-headers.hmap -iquote /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-project-headers.hmap -F/Users/maxtkach/Desktop/Trap/build/Release-iphoneos -I/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/include -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources/armv7 -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/vP/vP0lLz-mERmzuAjlK2aD5E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Trap_Prefix-cmnnpdzgzdtfcrcoqsyotgzolpwe/Trap_Prefix.pch -c /Users/maxtkach/Desktop/Trap/Classes/TrapAppDelegate.mm -o /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/TrapAppDelegate.o0#
+lSLF07#2@63"Compile /Users/maxtkach/Desktop/Trap/Classes/TrapAppDelegate.mm314558649#314558652#0(0"0(0#0#55"/Users/maxtkach/Desktop/Trap/Classes/TrapAppDelegate.mm4717520#1692"    cd /Users/maxtkach/Desktop/Trap    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch armv7 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O3 -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -funroll-loops -ffast-math -fvisibility=hidden -fvisibility-inlines-hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-generated-files.hmap -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-own-target-headers.hmap -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-all-target-headers.hmap -iquote /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-project-headers.hmap -F/Users/maxtkach/Desktop/Trap/build/Release-iphoneos -I/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/include -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources/armv7 -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/vP/vP0lLz-mERmzuAjlK2aD5E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Trap_Prefix-cmnnpdzgzdtfcrcoqsyotgzolpwe/Trap_Prefix.pch -c /Users/maxtkach/Desktop/Trap/Classes/TrapAppDelegate.mm -o /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/TrapAppDelegate.o0#
 
 CCompileC build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/TrapEditor.o /Users/maxtkach/Desktop/Trap/Classes/Graph/TrapEditor.mm normal armv7 objective-c++ com.apple.compilers.gcc.4_2
-s309992720.475626
-e309992721.217573
+s314558653.644766
+e314558655.115613
 r1
 xCompileC
 xbuild/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/TrapEditor.o
@@ -1135,11 +1188,11 @@ xnormal
 xarmv7
 xobjective-c++
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@64"Compile /Users/maxtkach/Desktop/Trap/Classes/Graph/TrapEditor.mm309992720#309992721#0(0"0(0#0#56"/Users/maxtkach/Desktop/Trap/Classes/Graph/TrapEditor.mm2421120960#1688"    cd /Users/maxtkach/Desktop/Trap    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch armv7 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O3 -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -funroll-loops -ffast-math -fvisibility=hidden -fvisibility-inlines-hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-generated-files.hmap -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-own-target-headers.hmap -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-all-target-headers.hmap -iquote /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-project-headers.hmap -F/Users/maxtkach/Desktop/Trap/build/Release-iphoneos -I/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/include -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources/armv7 -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/vP/vP0lLz-mERmzuAjlK2aD5E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Trap_Prefix-cmnnpdzgzdtfcrcoqsyotgzolpwe/Trap_Prefix.pch -c /Users/maxtkach/Desktop/Trap/Classes/Graph/TrapEditor.mm -o /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/TrapEditor.o0#
+lSLF07#2@64"Compile /Users/maxtkach/Desktop/Trap/Classes/Graph/TrapEditor.mm314558653#314558655#0(0"0(0#0#56"/Users/maxtkach/Desktop/Trap/Classes/Graph/TrapEditor.mm2450993808#1688"    cd /Users/maxtkach/Desktop/Trap    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch armv7 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O3 -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -funroll-loops -ffast-math -fvisibility=hidden -fvisibility-inlines-hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-generated-files.hmap -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-own-target-headers.hmap -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-all-target-headers.hmap -iquote /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-project-headers.hmap -F/Users/maxtkach/Desktop/Trap/build/Release-iphoneos -I/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/include -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources/armv7 -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/vP/vP0lLz-mERmzuAjlK2aD5E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Trap_Prefix-cmnnpdzgzdtfcrcoqsyotgzolpwe/Trap_Prefix.pch -c /Users/maxtkach/Desktop/Trap/Classes/Graph/TrapEditor.mm -o /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/TrapEditor.o0#
 
 CCompileC build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/TrapEditor3D.o /Users/maxtkach/Desktop/Trap/Classes/Graph/TrapEditor3D.mm normal armv7 objective-c++ com.apple.compilers.gcc.4_2
-s309992719.440976
-e309992721.740468
+s314558652.680595
+e314558656.566996
 r1
 xCompileC
 xbuild/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/TrapEditor3D.o
@@ -1148,7 +1201,7 @@ xnormal
 xarmv7
 xobjective-c++
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@66"Compile /Users/maxtkach/Desktop/Trap/Classes/Graph/TrapEditor3D.mm309992719#309992721#0(0"0(0#0#58"/Users/maxtkach/Desktop/Trap/Classes/Graph/TrapEditor3D.mm2421120960#1692"    cd /Users/maxtkach/Desktop/Trap    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch armv7 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O3 -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -funroll-loops -ffast-math -fvisibility=hidden -fvisibility-inlines-hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-generated-files.hmap -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-own-target-headers.hmap -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-all-target-headers.hmap -iquote /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-project-headers.hmap -F/Users/maxtkach/Desktop/Trap/build/Release-iphoneos -I/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/include -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources/armv7 -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/vP/vP0lLz-mERmzuAjlK2aD5E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Trap_Prefix-cmnnpdzgzdtfcrcoqsyotgzolpwe/Trap_Prefix.pch -c /Users/maxtkach/Desktop/Trap/Classes/Graph/TrapEditor3D.mm -o /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/TrapEditor3D.o0#
+lSLF07#2@66"Compile /Users/maxtkach/Desktop/Trap/Classes/Graph/TrapEditor3D.mm314558652#314558656#0(0"0(0#0#58"/Users/maxtkach/Desktop/Trap/Classes/Graph/TrapEditor3D.mm2450993808#1692"    cd /Users/maxtkach/Desktop/Trap    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c++ -arch armv7 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O3 -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -funroll-loops -ffast-math -fvisibility=hidden -fvisibility-inlines-hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-generated-files.hmap -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-own-target-headers.hmap -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-all-target-headers.hmap -iquote /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-project-headers.hmap -F/Users/maxtkach/Desktop/Trap/build/Release-iphoneos -I/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/include -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources/armv7 -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/vP/vP0lLz-mERmzuAjlK2aD5E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Trap_Prefix-cmnnpdzgzdtfcrcoqsyotgzolpwe/Trap_Prefix.pch -c /Users/maxtkach/Desktop/Trap/Classes/Graph/TrapEditor3D.mm -o /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/TrapEditor3D.o0#
 
 CCompileC build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/Types.o /Users/maxtkach/Desktop/Trap/Classes/Common/Types.cpp normal armv7 c++ com.apple.compilers.gcc.4_2
 s309517938.596034
@@ -1242,12 +1295,12 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@87"Compile /Users/maxtkach/Desktop/Trap/Classes/Side Libraries/XmlParser/tinyxmlparser.cpp309517939#309517940#0(0"0(0#0#79"/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/XmlParser/tinyxmlparser.cpp2421120960#1706"    cd /Users/maxtkach/Desktop/Trap    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x c++ -arch armv7 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -O3 -mdynamic-no-pic -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -funroll-loops -ffast-math -fvisibility=hidden -fvisibility-inlines-hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-generated-files.hmap -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-own-target-headers.hmap -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-all-target-headers.hmap -iquote /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-project-headers.hmap -F/Users/maxtkach/Desktop/Trap/build/Release-iphoneos -I/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/include -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources/armv7 -I/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/vP/vP0lLz-mERmzuAjlK2aD5E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Trap_Prefix-ehiweuamrryevpfhqkrhwowlxmrq/Trap_Prefix.pch -c "/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/XmlParser/tinyxmlparser.cpp" -o /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/tinyxmlparser.o0#
 
 CCompileXIB /Users/maxtkach/Desktop/Trap/MainWindow.xib
-s310210490.500273
-e310210491.399749
+s314382422.292353
+e314382425.123230
 r1
 xCompileXIB
 x/Users/maxtkach/Desktop/Trap/MainWindow.xib
-lSLF07#2@25"CompileXIB MainWindow.xib310210490#310210491#0(0"0(0#0#43"/Users/maxtkach/Desktop/Trap/MainWindow.xib2421120960#511"    cd /Users/maxtkach/Desktop/Trap    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/MainWindow.nib /Users/maxtkach/Desktop/Trap/MainWindow.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk0#
+lSLF07#2@25"CompileXIB MainWindow.xib314382422#314382425#0(0"0(0#0#43"/Users/maxtkach/Desktop/Trap/MainWindow.xib2450993808#511"    cd /Users/maxtkach/Desktop/Trap    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/MainWindow.nib /Users/maxtkach/Desktop/Trap/MainWindow.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk0#
 
 CCopyPNGFile "/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Button Add_256.png" "Resources/Images/Button Add_256.png"
 s309994332.629726
@@ -1438,6 +1491,15 @@ x/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Button Refresh_256
 xResources/Images/Button Refresh_256.png
 lSLF07#2@110"CopyPNGFile "build/Release-iphoneos/Trap.app/Button Refresh_256.png" "Resources/Images/Button Refresh_256.png"309993970#309993970#0(0"0(0#0#68"/Users/maxtkach/Desktop/Trap/Resources/Images/Button Refresh_256.png2421120960#574"    cd /Users/maxtkach/Desktop/Trap    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/maxtkach/Desktop/Trap/Resources/Images/Button Refresh_256.png" "/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Button Refresh_256.png"0#
 
+CCopyPNGFile "/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Button Refresh_32.png" "Resources/Images/Button Refresh_32.png"
+s314382423.047268
+e314382423.141431
+r1
+xCopyPNGFile
+x/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Button Refresh_32.png
+xResources/Images/Button Refresh_32.png
+lSLF07#2@108"CopyPNGFile "build/Release-iphoneos/Trap.app/Button Refresh_32.png" "Resources/Images/Button Refresh_32.png"314382423#314382423#0(0"0(0#0#67"/Users/maxtkach/Desktop/Trap/Resources/Images/Button Refresh_32.png2450993808#572"    cd /Users/maxtkach/Desktop/Trap    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/maxtkach/Desktop/Trap/Resources/Images/Button Refresh_32.png" "/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Button Refresh_32.png"0#
+
 CCopyPNGFile "/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Button Stop_128.png" "Resources/Images/Button Stop_128.png"
 s309993970.601805
 e309993970.699615
@@ -1464,6 +1526,15 @@ xCopyPNGFile
 x/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Button Stop_32.png
 xResources/Images/Button Stop_32.png
 lSLF07#2@102"CopyPNGFile "build/Release-iphoneos/Trap.app/Button Stop_32.png" "Resources/Images/Button Stop_32.png"309994333#309994333#0(0"0(0#0#64"/Users/maxtkach/Desktop/Trap/Resources/Images/Button Stop_32.png2421120960#566"    cd /Users/maxtkach/Desktop/Trap    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/maxtkach/Desktop/Trap/Resources/Images/Button Stop_32.png" "/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Button Stop_32.png"0#
+
+CCopyPNGFile "/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Button config.png" "Resources/Images/Button config.png"
+s314382422.301845
+e314382423.047022
+r1
+xCopyPNGFile
+x/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Button config.png
+xResources/Images/Button config.png
+lSLF07#2@100"CopyPNGFile "build/Release-iphoneos/Trap.app/Button config.png" "Resources/Images/Button config.png"314382422#314382423#0(0"0(0#0#63"/Users/maxtkach/Desktop/Trap/Resources/Images/Button config.png2450993808#564"    cd /Users/maxtkach/Desktop/Trap    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" "/Users/maxtkach/Desktop/Trap/Resources/Images/Button config.png" "/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Button config.png"0#
 
 CCopyPNGFile /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Default.png Resources/Images/Default.png
 s309517947.550445
@@ -1505,13 +1576,13 @@ xInput/Hex-pole-MB.dat
 lSLF07#2@26"Copy Input/Hex-pole-MB.dat309517947#309517948#0(0"0(0#0#50"/Users/maxtkach/Desktop/Trap/Input/Hex-pole-MB.dat2421120960#441"    cd /Users/maxtkach/Desktop/Trap    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/maxtkach/Desktop/Trap/Input/Hex-pole-MB.dat /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app0#
 
 CCpResource build/Release-iphoneos/Trap.app/Main.xml Input/Main.xml
-s309994646.143603
-e309994646.208061
+s314382422.294465
+e314382422.444078
 r1
 xCpResource
 xbuild/Release-iphoneos/Trap.app/Main.xml
 xInput/Main.xml
-lSLF07#2@19"Copy Input/Main.xml309994646#309994646#0(0"0(0#0#43"/Users/maxtkach/Desktop/Trap/Input/Main.xml2421120960#434"    cd /Users/maxtkach/Desktop/Trap    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/maxtkach/Desktop/Trap/Input/Main.xml /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app0#
+lSLF07#2@19"Copy Input/Main.xml314382422#314382422#0(0"0(0#0#43"/Users/maxtkach/Desktop/Trap/Input/Main.xml2450993808#434"    cd /Users/maxtkach/Desktop/Trap    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/maxtkach/Desktop/Trap/Input/Main.xml /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app0#
 
 CCpResource build/Release-iphoneos/Trap.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist
 s309517936.896276
@@ -1541,33 +1612,33 @@ xShaders/Shader.vsh
 lSLF07#2@23"Copy Shaders/Shader.vsh309517947#309517947#0(0"0(0#0#47"/Users/maxtkach/Desktop/Trap/Shaders/Shader.vsh2421120960#438"    cd /Users/maxtkach/Desktop/Trap    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/maxtkach/Desktop/Trap/Shaders/Shader.vsh /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app0#
 
 CGenerateDSYMFile /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app.dSYM /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Trap
-s310210740.453689
-e310210740.680129
+s314558658.347315
+e314558658.778429
 r1
 xGenerateDSYMFile
 x/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app.dSYM
 x/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Trap
-lSLF07#2@90"GenerateDSYMFile build/Release-iphoneos/Trap.app.dSYM build/Release-iphoneos/Trap.app/Trap310210740#310210740#0(0"0(0#0#65"/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Trap2421120960#327"    cd /Users/maxtkach/Desktop/Trap    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Trap -o /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app.dSYM0#
+lSLF07#2@90"GenerateDSYMFile build/Release-iphoneos/Trap.app.dSYM build/Release-iphoneos/Trap.app/Trap314558658#314558658#0(0"0(0#0#65"/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Trap2450993808#327"    cd /Users/maxtkach/Desktop/Trap    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Trap -o /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app.dSYM0#
 
 CLd /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Trap normal armv7
-s310210740.391043
-e310210740.453554
+s314558658.107511
+e314558658.347084
 r1
 xLd
 x/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Trap
 xnormal
 xarmv7
-lSLF07#2@70"Link /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Trap310210740#310210740#0(0"0(0#0#0"2421120960#1482"    cd /Users/maxtkach/Desktop/Trap    setenv IPHONEOS_DEPLOYMENT_TARGET 3.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/g++-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -L/Users/maxtkach/Desktop/Trap/build/Release-iphoneos "-L/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/GL" "-L/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/libTexture/jpeg/Debug" "-L/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/libTexture/jpeg" "-L/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/libTexture/jpeg/Release" "-L/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/libTexture/libpng/Debug" "-L/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/libTexture/libpng" "-L/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/libTexture/libpng/Release" "-L/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/libTexture/zlib/Debug" "-L/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/libTexture/zlib" -F/Users/maxtkach/Desktop/Trap/build/Release-iphoneos -filelist /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/Trap.LinkFileList -dead_strip -miphoneos-version-min=3.2 -framework Foundation -framework UIKit -framework OpenGLES -framework QuartzCore -framework CoreGraphics -o /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Trap0#
+lSLF07#2@70"Link /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Trap314558658#314558658#0(0"0(0#0#0"2450993808#1482"    cd /Users/maxtkach/Desktop/Trap    setenv IPHONEOS_DEPLOYMENT_TARGET 3.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/g++-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk -L/Users/maxtkach/Desktop/Trap/build/Release-iphoneos "-L/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/GL" "-L/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/libTexture/jpeg/Debug" "-L/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/libTexture/jpeg" "-L/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/libTexture/jpeg/Release" "-L/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/libTexture/libpng/Debug" "-L/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/libTexture/libpng" "-L/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/libTexture/libpng/Release" "-L/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/libTexture/zlib/Debug" "-L/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/libTexture/zlib" -F/Users/maxtkach/Desktop/Trap/build/Release-iphoneos -filelist /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/Trap.LinkFileList -dead_strip -miphoneos-version-min=3.2 -framework Foundation -framework UIKit -framework OpenGLES -framework QuartzCore -framework CoreGraphics -o /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Trap0#
 
 CPhaseScriptExecution "Run Script" /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Script-C1299632126E106A0040F0D8.sh
-s310210749.693595
-e310210750.131241
+s314558693.158385
+e314558693.966419
 r1
 xPhaseScriptExecution
 xRun Script
 x/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Script-C1299632126E106A0040F0D8.sh
 o/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/: replacing existing signature
-lSLF07#2@36"Run custom shell script 'Run Script'310210749#310210750#0(92"/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/: replacing existing signature1(13@92"/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/: replacing existing signature310210749#0#92#0(1@0"0(0#0#0"2421120960#17075"    cd /Users/maxtkach/Desktop/Trap    setenv ACTION build    setenv AD_HOC_CODE_SIGNING_ALLOWED NO    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER maxtkach    setenv ALWAYS_SEARCH_USER_PATHS NO    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS armv7    setenv ARCHS_STANDARD_32_64_BIT "armv6 armv7"    setenv ARCHS_STANDARD_32_BIT "armv6 armv7"    setenv ARCHS_UNIVERSAL_IPHONE_OS armv7    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/maxtkach/Desktop/Trap/build    setenv BUILD_ROOT /Users/maxtkach/Desktop/Trap/build    setenv BUILD_STYLE Release    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/maxtkach/Desktop/Trap/build/Release-iphoneos    setenv CACHE_ROOT /var/folders/vP/vP0lLz-mERmzuAjlK2aD5E+++TI/-Caches-/com.apple.Xcode.501    setenv CCHROOT /var/folders/vP/vP0lLz-mERmzuAjlK2aD5E+++TI/-Caches-/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app    setenv CODE_SIGNING_ALLOWED YES    setenv CODE_SIGNING_REQUIRED NO    setenv CODE_SIGN_CONTEXT_CLASS XCCodeSignContext    setenv CODE_SIGN_IDENTITY "iPhone Developer"    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/vP/vP0lLz-mERmzuAjlK2aD5E+++TI/-Caches-/com.apple.Xcode.501/CompositeSDKs    setenv COMPRESS_PNG_FILES YES    setenv CONFIGURATION Release    setenv CONFIGURATION_BUILD_DIR /Users/maxtkach/Desktop/Trap/build/Release-iphoneos    setenv CONFIGURATION_TEMP_DIR /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos    setenv CONTENTS_FOLDER_PATH Trap.app    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP YES    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH armv7    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING YES    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources    setenv DERIVED_FILE_DIR /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH /Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/Trap.dst    setenv DWARF_DSYM_FILE_NAME Trap.app.dSYM    setenv DWARF_DSYM_FOLDER_PATH /Users/maxtkach/Desktop/Trap/build/Release-iphoneos    setenv EFFECTIVE_PLATFORM_NAME -iphoneos    setenv EMBEDDED_PROFILE_NAME embedded.mobileprovision    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv ENTITLEMENTS_ALLOWED YES    setenv ENTITLEMENTS_REQUIRED NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH Trap.app/Executables    setenv EXECUTABLE_FOLDER_PATH Trap.app    setenv EXECUTABLE_NAME Trap    setenv EXECUTABLE_PATH Trap.app/Trap    setenv FILE_LIST /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH Trap.app/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/maxtkach/Desktop/Trap/build/Release-iphoneos\" "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME Trap.app    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD c99    setenv GCC_DYNAMIC_NO_PIC YES    setenv GCC_FAST_MATH YES    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OPTIMIZATION_LEVEL 3    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER Trap_Prefix.pch    setenv GCC_SYMBOLS_PRIVATE_EXTERN YES    setenv GCC_THUMB_SUPPORT YES    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_UNROLL_LOOPS YES    setenv GCC_VERSION 4.2    setenv GCC_VERSION_IDENTIFIER __2    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/include\" "    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE Trap-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT binary    setenv INFOPLIST_PATH Trap.app/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH /InfoPlist.strings    setenv INSTALL_DIR /tmp/Trap.dst/Users/maxtkach/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER maxtkach    setenv INSTALL_PATH /Users/maxtkach/Applications    setenv INSTALL_ROOT /tmp/Trap.dst    setenv IPHONEOS_DEPLOYMENT_TARGET 3.2    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH Trap.app/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-LinkMap-normal-armv7.txt    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/maxtkach/Desktop/Trap/build/Release-iphoneos\"  \"/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/GL\" \"/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/libTexture/jpeg/Debug\" \"/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/libTexture/jpeg\" \"/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/libTexture/jpeg/Release\" \"/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/libTexture/libpng/Debug\" \"/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/libTexture/libpng\" \"/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/libTexture/libpng/Release\" \"/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/libTexture/zlib/Debug\" \"/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/libTexture/zlib\""    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_armv7 /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/Trap.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MAC_OS_X_VERSION_ACTUAL 1064    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0604    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL i386    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects    setenv OBJECT_FILE_DIR_normal /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal    setenv OBJROOT /Users/maxtkach/Desktop/Trap/build    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_CFLAGS -DNS_BLOCK_ASSERTIONS=1    setenv OTHER_CPLUSPLUSFLAGS -DNS_BLOCK_ASSERTIONS=1    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH Trap.app/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS "c++ objective-c++"    setenv PKGINFO_FILE_PATH /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/PkgInfo    setenv PKGINFO_PATH Trap.app/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Platforms/iPhoneOS.platform/Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Platforms/iPhoneOS.platform/Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/Platforms/iPhoneOS.platform/Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Platforms/iPhoneOS.platform/Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/Platforms/iPhoneOS.platform/Developer/usr    setenv PLATFORM_DIR /Developer/Platforms/iPhoneOS.platform    setenv PLATFORM_NAME iphoneos    setenv PLIST_FILE_OUTPUT_FORMAT binary    setenv PLUGINS_FOLDER_PATH Trap.app/PlugIns    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH Trap.app/PrivateHeaders    setenv PRODUCT_NAME Trap    setenv PRODUCT_SETTINGS_PATH /Users/maxtkach/Desktop/Trap/Trap-Info.plist    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT Trap    setenv PROJECT_DERIVED_FILE_DIR /Users/maxtkach/Desktop/Trap/build/Trap.build/DerivedSources    setenv PROJECT_DIR /Users/maxtkach/Desktop/Trap    setenv PROJECT_FILE_PATH /Users/maxtkach/Desktop/Trap/Trap.xcodeproj    setenv PROJECT_NAME Trap    setenv PROJECT_TEMP_DIR /Users/maxtkach/Desktop/Trap/build/Trap.build    setenv PROVISIONING_PROFILE_REQUIRED YES    setenv PUBLIC_HEADERS_FOLDER_PATH Trap.app/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv RESOURCE_RULES_REQUIRED YES    setenv REZ_COLLECTOR_DIR /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Users/maxtkach/Desktop/Trap/build/Release-iphoneos\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH Trap.app/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk    setenv SDK_DIR /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk    setenv SDK_NAME iphoneos3.2    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHALLOW_BUNDLE YES    setenv SHARED_DERIVED_FILE_DIR /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH Trap.app/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/vP/vP0lLz-mERmzuAjlK2aD5E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH Trap.app/SharedSupport    setenv SKIP_INSTALL YES    setenv SOURCE_ROOT /Users/maxtkach/Desktop/Trap    setenv SRCROOT /Users/maxtkach/Desktop/Trap    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING binary    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SUPPORTED_DEVICE_FAMILIES 1,2    setenv SYMBOL_REPOSITORY_DIR /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/SymbolRepositories    setenv SYMROOT /Users/maxtkach/Desktop/Trap/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETED_DEVICE_FAMILY 2    setenv TARGETNAME Trap    setenv TARGET_BUILD_DIR /Users/maxtkach/Desktop/Trap/build/Release-iphoneos    setenv TARGET_NAME Trap    setenv TARGET_TEMP_DIR /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build    setenv TEMP_DIR /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build    setenv TEMP_FILES_DIR /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build    setenv TEMP_FILE_DIR /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build    setenv TEMP_ROOT /Users/maxtkach/Desktop/Trap/build    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH Trap.app    setenv UNSTRIPPED_PRODUCT NO    setenv USER maxtkach    setenv USER_APPS_DIR /Users/maxtkach/Applications    setenv USER_LIBRARY_DIR /Users/maxtkach/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT YES    setenv VALID_ARCHS "armv6 armv7"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH Trap.app/version.plist    setenv VERSION_INFO_BUILDER maxtkach    setenv VERSION_INFO_FILE Trap_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:Trap  PROJECT:Trap-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME Trap.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_VERSION_ACTUAL 0323    setenv XCODE_VERSION_MAJOR 0300    setenv XCODE_VERSION_MINOR 0320    setenv YACC /Developer/usr/bin/yacc    /bin/sh -c /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Script-C1299632126E106A0040F0D8.sh0#
+lSLF07#2@36"Run custom shell script 'Run Script'314558693#314558693#0(92"/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/: replacing existing signature1(13@92"/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/: replacing existing signature314558693#0#92#0(1@0"0(0#0#0"2450993808#17075"    cd /Users/maxtkach/Desktop/Trap    setenv ACTION build    setenv AD_HOC_CODE_SIGNING_ALLOWED NO    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER maxtkach    setenv ALWAYS_SEARCH_USER_PATHS NO    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS armv7    setenv ARCHS_STANDARD_32_64_BIT "armv6 armv7"    setenv ARCHS_STANDARD_32_BIT "armv6 armv7"    setenv ARCHS_UNIVERSAL_IPHONE_OS armv7    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/maxtkach/Desktop/Trap/build    setenv BUILD_ROOT /Users/maxtkach/Desktop/Trap/build    setenv BUILD_STYLE Release    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/maxtkach/Desktop/Trap/build/Release-iphoneos    setenv CACHE_ROOT /var/folders/vP/vP0lLz-mERmzuAjlK2aD5E+++TI/-Caches-/com.apple.Xcode.501    setenv CCHROOT /var/folders/vP/vP0lLz-mERmzuAjlK2aD5E+++TI/-Caches-/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app    setenv CODE_SIGNING_ALLOWED YES    setenv CODE_SIGNING_REQUIRED NO    setenv CODE_SIGN_CONTEXT_CLASS XCCodeSignContext    setenv CODE_SIGN_IDENTITY "iPhone Developer"    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/vP/vP0lLz-mERmzuAjlK2aD5E+++TI/-Caches-/com.apple.Xcode.501/CompositeSDKs    setenv COMPRESS_PNG_FILES YES    setenv CONFIGURATION Release    setenv CONFIGURATION_BUILD_DIR /Users/maxtkach/Desktop/Trap/build/Release-iphoneos    setenv CONFIGURATION_TEMP_DIR /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos    setenv CONTENTS_FOLDER_PATH Trap.app    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP YES    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH armv7    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING YES    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources    setenv DERIVED_FILE_DIR /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH /Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/Trap.dst    setenv DWARF_DSYM_FILE_NAME Trap.app.dSYM    setenv DWARF_DSYM_FOLDER_PATH /Users/maxtkach/Desktop/Trap/build/Release-iphoneos    setenv EFFECTIVE_PLATFORM_NAME -iphoneos    setenv EMBEDDED_PROFILE_NAME embedded.mobileprovision    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv ENTITLEMENTS_ALLOWED YES    setenv ENTITLEMENTS_REQUIRED NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH Trap.app/Executables    setenv EXECUTABLE_FOLDER_PATH Trap.app    setenv EXECUTABLE_NAME Trap    setenv EXECUTABLE_PATH Trap.app/Trap    setenv FILE_LIST /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH Trap.app/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/maxtkach/Desktop/Trap/build/Release-iphoneos\" "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME Trap.app    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD c99    setenv GCC_DYNAMIC_NO_PIC YES    setenv GCC_FAST_MATH YES    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OPTIMIZATION_LEVEL 3    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER Trap_Prefix.pch    setenv GCC_SYMBOLS_PRIVATE_EXTERN YES    setenv GCC_THUMB_SUPPORT YES    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_UNROLL_LOOPS YES    setenv GCC_VERSION 4.2    setenv GCC_VERSION_IDENTIFIER __2    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/include\" "    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE Trap-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT binary    setenv INFOPLIST_PATH Trap.app/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH /InfoPlist.strings    setenv INSTALL_DIR /tmp/Trap.dst/Users/maxtkach/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER maxtkach    setenv INSTALL_PATH /Users/maxtkach/Applications    setenv INSTALL_ROOT /tmp/Trap.dst    setenv IPHONEOS_DEPLOYMENT_TARGET 3.2    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH Trap.app/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap-LinkMap-normal-armv7.txt    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/maxtkach/Desktop/Trap/build/Release-iphoneos\"  \"/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/GL\" \"/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/libTexture/jpeg/Debug\" \"/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/libTexture/jpeg\" \"/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/libTexture/jpeg/Release\" \"/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/libTexture/libpng/Debug\" \"/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/libTexture/libpng\" \"/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/libTexture/libpng/Release\" \"/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/libTexture/zlib/Debug\" \"/Users/maxtkach/Desktop/Trap/Classes/Side Libraries/libTexture/zlib\""    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_armv7 /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal/armv7/Trap.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MAC_OS_X_VERSION_ACTUAL 1065    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0605    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL i386    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects    setenv OBJECT_FILE_DIR_normal /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Objects-normal    setenv OBJROOT /Users/maxtkach/Desktop/Trap/build    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_CFLAGS -DNS_BLOCK_ASSERTIONS=1    setenv OTHER_CPLUSPLUSFLAGS -DNS_BLOCK_ASSERTIONS=1    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH Trap.app/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS "c++ objective-c++"    setenv PKGINFO_FILE_PATH /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/PkgInfo    setenv PKGINFO_PATH Trap.app/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Platforms/iPhoneOS.platform/Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Platforms/iPhoneOS.platform/Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/Platforms/iPhoneOS.platform/Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Platforms/iPhoneOS.platform/Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/Platforms/iPhoneOS.platform/Developer/usr    setenv PLATFORM_DIR /Developer/Platforms/iPhoneOS.platform    setenv PLATFORM_NAME iphoneos    setenv PLIST_FILE_OUTPUT_FORMAT binary    setenv PLUGINS_FOLDER_PATH Trap.app/PlugIns    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH Trap.app/PrivateHeaders    setenv PRODUCT_NAME Trap    setenv PRODUCT_SETTINGS_PATH /Users/maxtkach/Desktop/Trap/Trap-Info.plist    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT Trap    setenv PROJECT_DERIVED_FILE_DIR /Users/maxtkach/Desktop/Trap/build/Trap.build/DerivedSources    setenv PROJECT_DIR /Users/maxtkach/Desktop/Trap    setenv PROJECT_FILE_PATH /Users/maxtkach/Desktop/Trap/Trap.xcodeproj    setenv PROJECT_NAME Trap    setenv PROJECT_TEMP_DIR /Users/maxtkach/Desktop/Trap/build/Trap.build    setenv PROVISIONING_PROFILE_REQUIRED YES    setenv PUBLIC_HEADERS_FOLDER_PATH Trap.app/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv RESOURCE_RULES_REQUIRED YES    setenv REZ_COLLECTOR_DIR /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Users/maxtkach/Desktop/Trap/build/Release-iphoneos\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH Trap.app/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk    setenv SDK_DIR /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk    setenv SDK_NAME iphoneos3.2    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHALLOW_BUNDLE YES    setenv SHARED_DERIVED_FILE_DIR /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH Trap.app/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/vP/vP0lLz-mERmzuAjlK2aD5E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH Trap.app/SharedSupport    setenv SKIP_INSTALL YES    setenv SOURCE_ROOT /Users/maxtkach/Desktop/Trap    setenv SRCROOT /Users/maxtkach/Desktop/Trap    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING binary    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SUPPORTED_DEVICE_FAMILIES 1,2    setenv SYMBOL_REPOSITORY_DIR /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/SymbolRepositories    setenv SYMROOT /Users/maxtkach/Desktop/Trap/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETED_DEVICE_FAMILY 2    setenv TARGETNAME Trap    setenv TARGET_BUILD_DIR /Users/maxtkach/Desktop/Trap/build/Release-iphoneos    setenv TARGET_NAME Trap    setenv TARGET_TEMP_DIR /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build    setenv TEMP_DIR /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build    setenv TEMP_FILES_DIR /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build    setenv TEMP_FILE_DIR /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build    setenv TEMP_ROOT /Users/maxtkach/Desktop/Trap/build    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH Trap.app    setenv UNSTRIPPED_PRODUCT NO    setenv USER maxtkach    setenv USER_APPS_DIR /Users/maxtkach/Applications    setenv USER_LIBRARY_DIR /Users/maxtkach/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT YES    setenv VALID_ARCHS "armv6 armv7"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH Trap.app/version.plist    setenv VERSION_INFO_BUILDER maxtkach    setenv VERSION_INFO_FILE Trap_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:Trap  PROJECT:Trap-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME Trap.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_VERSION_ACTUAL 0323    setenv XCODE_VERSION_MAJOR 0300    setenv XCODE_VERSION_MINOR 0320    setenv YACC /Developer/usr/bin/yacc    /bin/sh -c /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Script-C1299632126E106A0040F0D8.sh0#
 
 CProcessInfoPlistFile /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Info.plist Trap-Info.plist
 s309520474.528769
@@ -1674,16 +1745,16 @@ x/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap.
 lSLF07#2@168"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist build/Trap.build/Release-iphoneos/Trap.build/Trap.xcent309167115#309167115#0(0"0(0#0#84"/Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap.xcent2421120960#405"    cd /Users/maxtkach/Desktop/Trap    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist -entitlements -format xml -o /Users/maxtkach/Desktop/Trap/build/Trap.build/Release-iphoneos/Trap.build/Trap.xcent0#
 
 CTouch /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app
-s310210740.998364
-e310210741.004989
+s314558660.172691
+e314558660.179885
 r1
 xTouch
 x/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app
-lSLF07#2@66"Touch /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app310210740#310210741#0(0"0(0#0#0"2421120960#243"    cd /Users/maxtkach/Desktop/Trap    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app0#
+lSLF07#2@66"Touch /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app314558660#314558660#0(0"0(0#0#0"2450993808#243"    cd /Users/maxtkach/Desktop/Trap    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app0#
 
 CValidate /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app
-s310210750.131503
-e310210750.292632
+s314558693.966937
+e314558694.295726
 r1
 xValidate
 x/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app
@@ -1691,5 +1762,5 @@ owarning: Application failed codesign verification.  The signature was invalid, 
 oExecutable=/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Trap
 o - (null)
 o
-lSLF07#2@40"Validate build/Release-iphoneos/Trap.app310210750#310210750#0(235"warning: Application failed codesign verification.  The signature was invalid, or it was not signed with an Apple submission certificate. (-19011)Executable=/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Trap - (null)1(22@138" Application failed codesign verification.  The signature was invalid, or it was not signed with an Apple submission certificate. (-19011)310210750#4294967295#0#0(6@0"310210750#0#0#0#0#0"0(0#0#60"/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app2421120960#352"    cd /Users/maxtkach/Desktop/Trap    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv PRODUCT_TYPE com.apple.product-type.application    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/Validation /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app0#
+lSLF07#2@40"Validate build/Release-iphoneos/Trap.app314558693#314558694#0(235"warning: Application failed codesign verification.  The signature was invalid, or it was not signed with an Apple submission certificate. (-19011)Executable=/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app/Trap - (null)1(22@138" Application failed codesign verification.  The signature was invalid, or it was not signed with an Apple submission certificate. (-19011)314558694#4294967295#0#0(6@0"314558694#0#0#0#0#0"0(0#0#60"/Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app2450993808#352"    cd /Users/maxtkach/Desktop/Trap    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv PRODUCT_TYPE com.apple.product-type.application    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/Validation /Users/maxtkach/Desktop/Trap/build/Release-iphoneos/Trap.app0#
 

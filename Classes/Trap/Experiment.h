@@ -57,7 +57,7 @@ protected:
 	/// After experiment processing
 	virtual void finishExperiment();
 	/// Motion procedure: main function which starts the experiment processing
-	inline virtual void motion(sint l, real tp);
+	inline virtual void motion(const sint l, const real tp);
 	/// Experiment dump in time
 	virtual void getExperimentDump();
 };

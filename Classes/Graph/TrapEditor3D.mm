@@ -77,10 +77,6 @@
 	
 	particlesNumber = experiment->particles->getNumber();
 	particlesColors.resize(particlesNumber*4);
-	
-	GLfloat invRl = 1.0/experiment->rl;
-	cameraR = experiment->cameraD*0.5*invRl;
-	cameraL = experiment->cameraL*invRl;
 }
 
 
@@ -412,11 +408,17 @@ static vertex3 resonatorNormals[resonatorQuality*6];
 	glScalef(scale, scale, scale);
 	glTranslatef(0,0,translateToBack);
 	glRotatef(rotateAngle, 0, 1, 0);
-	GLfloat dCoef = experiment->rl / experiment->cameraD;
-	GLfloat lCoef = experiment->rl / experiment->cameraL;
-	glScalef(dCoef, dCoef, lCoef);
+	const GLfloat dCoef = experiment->rl / experiment->cameraD;
+	const GLfloat lCoef = experiment->rl / experiment->cameraL;
+	const GLfloat coef = lCoef>dCoef ? dCoef : lCoef;
+	glScalef(coef, coef, coef);
 	rotateAngle+=0.1;
 	
+	// Resonator sizes
+	GLfloat invRl = 1.0/experiment->rl;
+	cameraR = experiment->cameraD*0.5*invRl;
+	cameraL = experiment->cameraL*invRl;
+		
 	[self renderResonator:GL_BACK];
 	[self renderAxes];
 	[self renderParticles];

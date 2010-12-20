@@ -42,7 +42,6 @@
 - (void)render;
 - (BOOL)resizeFromLayer:(CAEAGLLayer *)layer;
 
-- (void)setExperiment:(Experiment *)e;
 - (void)setColors:(vector< RangeColor >)colors_;
 - (void)setDefaultColors;
 

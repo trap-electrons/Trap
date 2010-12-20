@@ -12,10 +12,6 @@ Experiment :: Experiment(const string inputFileName, const char *defaultDir)
 			printf("%s", defaultDirectory.c_str());
 		}
 
-	dz = 0.75;
-	dx = 0.4; 
-	invDx = 1.0/dx;
-	invDz = 1.0/dz;
 	cameraL = conf.cameraL;
 	cameraD = conf.cameraD;
 	isRunning = false;
@@ -46,6 +42,13 @@ void Experiment :: start()
 	shouldStop = false;
 	
 	// Determinate parameters
+	cameraD = conf.cameraD; 
+	cameraL = conf.cameraL;
+	dz = cameraL / float(conf.BFieldSizeZ-1);
+	dx = cameraD / float(conf.BFieldSizeX-1); 
+	invDx = 1.0/dx;
+	invDz = 1.0/dz;	
+	
 	fi = conf.fi/180.0*pi;
 	v0 = sqrt(1.-1./sqr(1.+conf.W0/511000.0));	// начальная скорость электрона в единицах С
 	u0 = v0/sqrt(1.0-sqr(v0));					// начальный импульс электрона с единицах mc
@@ -124,7 +127,7 @@ void Experiment :: processExperiment()
 			particles -> findMinMaxEnergy();
 			currentDumpTime++;
 		}
-		if (shouldStop) { isRunning = false; return; }
+		if (shouldStop) { return; }
 	}
 }
 
@@ -135,6 +138,7 @@ void Experiment :: finishExperiment()
 	particles -> calculateEnergy();
 	particles -> findMinMaxEnergy();
 	currentDumpTime++;
+	isRunning = false;
 }
 
 //-----------------------------------------------------------------------------
@@ -150,52 +154,58 @@ void Experiment :: prepareExperiment()
 
 
 //-----------------------------------------------------------------------------
-void Experiment :: motion(sint l, real tp)
+void Experiment :: motion(const sint l, const real tp)
 {
 	real *x =  &particles->x[0], *u = &particles->u[0], *gm = &particles->gm[0]; 
-	real ex = EField->g[l].x, ey = EField->g[l].y, ez = EField->g[l].z;
+	const real ex = EField->g[l].x, ey = EField->g[l].y, ez = EField->g[l].z;
 
 	#pragma omp parallel for
 	for (sint m=0; m<particlesNumber; m++) 
 	{
 		if (particles->index[m].dead==1) continue;
-		sint	ix=particles->index[m].x,
-				iy=particles->index[m].y, 
-				iz=particles->index[m].z;
+		const sint	
+			ix=particles->index[m].x,
+			iy=particles->index[m].y, 
+			iz=particles->index[m].z;
 
 	    real bp[3], t[3], sum;
 
-		real xn = x[ix]*invDxRl + halfX,
-			 yn = x[iy]*invDyRl + halfY,
-			 zn = x[iz]*invDzRl + halfZ;
+		const real 
+			xn = x[ix]*invDxRl + halfX,
+			yn = x[iy]*invDyRl + halfY,
+			zn = x[iz]*invDzRl + halfZ;
 
-		sint i = xn,
-			 j = yn,
-			 k = zn,
-			 i1 = i+1,
-			 j1 = j+1,
-			 k1 = k+1;
+		const sint 
+			i = xn,
+			j = yn,
+			k = zn,
+			i1 = i+1,
+			j1 = j+1,
+			k1 = k+1;
 
-		real dx0 = xn-i,
-			 dy0 = yn-j,
-			 dz0 = zn-k,
-			 dx1 = 1.0-dx0,
-			 dy1 = 1.0-dy0,
-			 dz1 = 1.0-dz0;
+		const real 
+			dx0 = xn-i,
+			dy0 = yn-j,
+			dz0 = zn-k,
+			dx1 = 1.0-dx0,
+			dy1 = 1.0-dy0,
+			dz1 = 1.0-dz0;
 
-		real dy0dz0 = dy0*dz0, 
-			 dy1dz0 = dy1*dz0,
-			 dy0dz1 = dy0*dz1,
-			 dy1dz1 = dy1*dz1;
+		const real 
+			dy0dz0 = dy0*dz0, 
+			dy1dz0 = dy1*dz0,
+			dy0dz1 = dy0*dz1,
+			dy1dz1 = dy1*dz1;
 
-		real v1=dx0*dy0dz0,
-			 v2=dx1*dy0dz0,
-			 v3=dx0*dy1dz0,
-			 v4=dx1*dy1dz0,
-			 v5=dx0*dy0dz1,
-			 v6=dx1*dy0dz1,
-			 v7=dx0*dy1dz1,
-			 v8=dx1*dy1dz1;
+		const real 
+			v1=dx0*dy0dz0,
+			v2=dx1*dy0dz0,
+			v3=dx0*dy1dz0,
+			v4=dx1*dy1dz0,
+			v5=dx0*dy0dz1,
+			v6=dx1*dy0dz1,
+			v7=dx0*dy1dz1,
+			v8=dx1*dy1dz1;
 		
 		// bxp, byp, bzp - поля в точках расположения частиц
 		bp[0] = 
@@ -218,36 +228,40 @@ void Experiment :: motion(sint l, real tp)
 
 		
 		// Схема Бориса интегрированиня ур-ний движения
-		real uxm = u[ix] + ex,
+		const real 
+			uxm = u[ix] + ex,
 			 uym = u[iy] + ey,
 			 uzm = u[iz] + ez;
 
-		real gmn = sqrt(1.0 + uxm*uxm + uym*uym + uzm*uzm),
-			 tg = tp/gmn;
+		const real 
+			gmn = sqrt(1.0 + uxm*uxm + uym*uym + uzm*uzm),
+			tg = tp/gmn;
 		for (sint q=0; q<3; q++) t[q] = tg * bp[q];
-			 
 
 		sum = 1.0;
 		for(sint q=0; q<3; q++) sum += sqr(t[q]);
-		real inv_txyzr = 2.0/(sum),
-			 sx = t[0] * inv_txyzr,
-			 sy = t[1] * inv_txyzr,
-			 sz = t[2] * inv_txyzr;
+		const real 
+			inv_txyzr = 2.0/(sum),
+			sx = t[0] * inv_txyzr,
+			sy = t[1] * inv_txyzr,
+			sz = t[2] * inv_txyzr;
 
-		real uxr = uxm + uym*t[2] - uzm*t[1],
-			 uyr = uym + uzm*t[0] - uxm*t[2],
-			 uzr = uzm + uxm*t[1] - uym*t[0];
+		const real
+			uxr = uxm + uym*t[2] - uzm*t[1],
+			uyr = uym + uzm*t[0] - uxm*t[2],
+			uzr = uzm + uxm*t[1] - uym*t[0];
 
-		real uxp = uxm + uyr*sz - uzr*sy,
-			 uyp = uym + uzr*sx - uxr*sz,
-			 uzp = uzm + uxr*sy - uyr*sx;
+		const real 
+			uxp = uxm + uyr*sz - uzr*sy,
+			uyp = uym + uzr*sx - uxr*sz,
+			uzp = uzm + uxr*sy - uyr*sx;
 
 		u[ix] = uxp + ex;
 		u[iy] = uyp + ey; 
 		u[iz] = uzp + ez;
 
 		gm[m] = sqrt(1.0 + sqr(u[ix]) + sqr(u[iy]) + sqr(u[iz])); 
-		real gt = dt/gm[m];
+		const real gt = dt/gm[m];
 		
 		x[ix] += u[ix]*gt;
 		x[iy] += u[iy]*gt;

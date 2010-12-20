@@ -11,7 +11,7 @@
 
 @implementation TrapAppDelegate
 
-@synthesize window, progressView, glView, configView;
+@synthesize window, progressView, glView, configView, configControlView;
 
 - (void)startExperimentInBackground {
 	experiment->start();
@@ -27,17 +27,22 @@
 	}
 }
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-	
-	sleep(1);
-	
-	NSString *source = [[NSBundle mainBundle] resourcePath];	
+- (void)newExperiment {
+	if (experiment) delete experiment;
+	NSString *source = [[NSBundle mainBundle] resourcePath];
 	experiment = new Experiment("", (const char*)[source UTF8String]);
-	[NSThread detachNewThreadSelector:@selector(startExperimentInBackground) toTarget:self withObject:nil];
 	
+	[configControlView setExperiment:experiment];
+	[glView setExperiment:experiment];
+
+}
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+	sleep(1);
+	[self newExperiment];
+	
+	[configControlView startExperiment];
 	stateTimer = [NSTimer scheduledTimerWithTimeInterval:(NSTimeInterval)((1.0 / 20.0)) target:self selector:@selector(stateRender:) userInfo:nil repeats:TRUE];
-	
-	glView.experiment = experiment;
 	[glView makeRenderer];
     [glView startAnimation];
     return YES;
@@ -71,13 +76,11 @@
 #pragma mark Interface
 
 - (IBAction)stopExperimentTouched:(id)sender {
-	experiment->stop();
+	[configControlView stopExperiment];
 }
 
 - (IBAction)playExperimentTouched:(id)sender {
-	if (!experiment->isExperimentRunning()) {
-		[NSThread detachNewThreadSelector:@selector(startExperimentInBackground) toTarget:self withObject:nil];
-	}
+	[configControlView startExperiment];
 }
 
 - (IBAction)configTouched:(id)sender {

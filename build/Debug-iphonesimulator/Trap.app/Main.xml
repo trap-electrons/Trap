@@ -1,7 +1,7 @@
 ﻿<Experiment>
   
-	<kt> 5000 </kt>
-	<kd> 50 </kd>
+	<kt> 50000 </kt>
+	<kd> 10</kd>
 	<E> 1 </E>
 	<B00> 0 </B00>
 
@@ -13,8 +13,8 @@
   <CoilsField>Coils-XYZ-MB2.dat</CoilsField>
   <HexField>Hex-pole-MB.dat</HexField>
 
-  <ParticlesNumber>65536</ParticlesNumber>
-  <temp> 32768  131072 524288 </temp>
+  <ParticlesNumber>10000</ParticlesNumber>
+  <temp> 32768 65536 131072 524288 </temp>
   
   
   <InitialDistribution>
@@ -25,7 +25,7 @@
     <y0>	    0.01 </y0>
     <z0>	    0.01 </z0>
     <W0>	    100.1 </W0>
-    <fi>	    0.05 </fi>
+    <fi>	    0.05 </fi>∑
   </InitialDistribution>
   
 </Experiment>

@@ -61,6 +61,7 @@
 		C1A33366127A233400ACB9A5 /* Button Stop_256.png in Resources */ = {isa = PBXBuildFile; fileRef = C1A3334E127A233400ACB9A5 /* Button Stop_256.png */; };
 		C1A333A8127D80EB00ACB9A5 /* Button config.png in Resources */ = {isa = PBXBuildFile; fileRef = C1A333A7127D80EB00ACB9A5 /* Button config.png */; };
 		C1A333AA127D81E700ACB9A5 /* Button Refresh_32.png in Resources */ = {isa = PBXBuildFile; fileRef = C1A333A9127D81E700ACB9A5 /* Button Refresh_32.png */; };
+		C1C6717F12BD05B900B2EB80 /* ConfigView.mm in Sources */ = {isa = PBXBuildFile; fileRef = C1C6717E12BD05B900B2EB80 /* ConfigView.mm */; };
 		C1EA1F091270739E00C2C82E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = C1EA1F081270739E00C2C82E /* Default.png */; };
 /* End PBXBuildFile section */
 
@@ -137,6 +138,8 @@
 		C1A3334E127A233400ACB9A5 /* Button Stop_256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Button Stop_256.png"; path = "Resources/Images/Button Stop_256.png"; sourceTree = "<group>"; };
 		C1A333A7127D80EB00ACB9A5 /* Button config.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Button config.png"; path = "Resources/Images/Button config.png"; sourceTree = "<group>"; };
 		C1A333A9127D81E700ACB9A5 /* Button Refresh_32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Button Refresh_32.png"; path = "Resources/Images/Button Refresh_32.png"; sourceTree = "<group>"; };
+		C1C6717D12BD05B900B2EB80 /* ConfigView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigView.h; sourceTree = "<group>"; };
+		C1C6717E12BD05B900B2EB80 /* ConfigView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ConfigView.mm; sourceTree = "<group>"; };
 		C1EA1F081270739E00C2C82E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Resources/Images/Default.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,12 +162,11 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C1C6717C12BD059800B2EB80 /* Interface */,
 				C192B2F7126C5C0F00B6920C /* Graph */,
 				C1467055125B4F0C009A3A7D /* Common */,
 				C1467059125B4F0C009A3A7D /* Side Libraries */,
 				C1467278125B4F0D009A3A7D /* Trap */,
-				1D3623240D0F684500981E51 /* TrapAppDelegate.h */,
-				1D3623250D0F684500981E51 /* TrapAppDelegate.mm */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -346,6 +348,17 @@
 			name = Buttons;
 			sourceTree = "<group>";
 		};
+		C1C6717C12BD059800B2EB80 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* TrapAppDelegate.h */,
+				1D3623250D0F684500981E51 /* TrapAppDelegate.mm */,
+				C1C6717D12BD05B900B2EB80 /* ConfigView.h */,
+				C1C6717E12BD05B900B2EB80 /* ConfigView.mm */,
+			);
+			name = Interface;
+			sourceTree = "<group>";
+		};
 		C1EA1F041270730200C2C82E /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -475,6 +488,7 @@
 				C192B334126C5D4C00B6920C /* TrapEditor3D.mm in Sources */,
 				C192B335126C5D4C00B6920C /* TrapEditor.mm in Sources */,
 				C192B336126C5D4C00B6920C /* EAGLView.mm in Sources */,
+				C1C6717F12BD05B900B2EB80 /* ConfigView.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
